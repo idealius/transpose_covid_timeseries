@@ -58,7 +58,7 @@ class parse(Enum):
 
 
 def parseop(string, delimiter, index, value, operation): #parse operation, index starts at 1
-    _string = string+','#Add a trailing comma at end of complete line to account for the last block
+    _string = string+delimiter#Add a trailing comma at end of complete line to account for the last block
     count = 1
     start = 0
     while count < index:
@@ -114,17 +114,22 @@ def sanitize_countryname(string):
 
     return string
 
-def load_population_table():
+population_table = []
+
+def load_population_table(_population_filename):
     global sweden_population
-    csvfile = open(population_filename, newline='')
+    global population_table
+    csvfile = open(_population_filename, newline='')
     reader = csv.DictReader(csvfile)
+    count = 0
     for row in reader:
         if row['Country'] == "Sweden":
             sweden_population =  int(row['Population'])
-##            print(row['Country'], row['Population'])
-    return reader
+        population_table.append([row['Country'],row['Population']])
+        print(population_table[count])
+        count += 1
 
-population_table = load_population_table()
+load_population_table(population_filename)
 
 
 
@@ -262,24 +267,18 @@ def compose_row(_row, _header_row, index, delimiter):
 
     day = parseop(_header_row, delimiter, index+3, 0, parse.RETRIEVE)
     day = day.replace('\r', '')
-    deaths = parseop(_row, delimiter, index+3, 0, parse.RETRIEVE)
-    deaths = deaths.replace('\r', '')
+    deaths = float(parseop(_row, delimiter, index+3, 0, parse.RETRIEVE))
+##    deaths = deaths.replace('\r', '')
     if ONE_WAVE_HERD == True:
-        for row in population_table:
-            if row['Country'] == country:
-                deaths =  float(float(deaths / row['Population']) / one_wave_herd)
-                print("Converting deaths for " + country)
+        for row in range(0,len(population_table)):
+##            print(population_table[row][0], country)
+            if population_table[row][0] == country:
+                deaths =  float(float(deaths / float(population_table[row][1]) / one_wave_herd))
+                if deaths > .99: print(country, deaths)
+##                print("Converting deaths for " + country)
     string = country + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter + str(deaths)
     return string
 
-##try:
-##    count = 0
-##    c = 0
-##    while c != -1:
-##        count +=1
-##        c = print(str(parseop(proc_row_array[0], ',', count, 0, parse.RETRIEVE)))
-##except:
-##        print('!' + str(count))
 
 def transpose(_proc_row_array, _days):
     countries = len(_proc_row_array)-1 #subtract header row
@@ -299,6 +298,8 @@ def transpose(_proc_row_array, _days):
             try:
                 final_row_array[(c - 1) * (_days)+index] = compose_row(_proc_row_array[c], _proc_row_array[0], index, ',') + '\r'
             except:
+                print("Unexpected error:", sys.exc_info()[0])
+                raise
                 print(str(c*_days+index), str(len(final_row_array)-_days))
     ##        print(final_row_array[c * days+index])
     print(str((c-1)*_days+index), str(len(final_row_array)))
@@ -312,4 +313,4 @@ csvfile_w = open(filename+'_t.csv', "w")
 csvfile_w.writelines(row_array)
 csvfile_w.close()
 
-exit(0)
+
