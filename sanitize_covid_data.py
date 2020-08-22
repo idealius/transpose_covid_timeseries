@@ -6,7 +6,6 @@ import sys
 ##from decimal import *
 ##from decimal import Decimal as d
 from enum import Enum
-import emoji
 from datetime import *
 
 try:
@@ -14,7 +13,7 @@ try:
 except:
     filename = "time_series_covid19_deaths_global"
 
-CONVERT_TO_RATE = False
+CONVERT_TO_RATE = False #This is no longer current
 ONE_WAVE_HERD = True
 population_filename = "population_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
