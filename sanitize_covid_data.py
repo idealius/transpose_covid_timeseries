@@ -6,6 +6,8 @@ import sys
 ##from decimal import *
 ##from decimal import Decimal as d
 from enum import Enum
+import emoji
+from datetime import *
 
 try:
     filename = sys.argv[1]
@@ -15,6 +17,7 @@ except:
 CONVERT_TO_RATE = False
 ONE_WAVE_HERD = True
 population_filename = "population_table.csv"
+contact_tracing_filename = "covid-contact-tracing.csv"
 sweden_population = int(0)
 
 def getstuff(filename, criterion):
@@ -76,7 +79,7 @@ def parseop(string, delimiter, index, value, operation): #parse operation, index
     if operation == parse.REPLACE:
         update_int = value
         string1 = string[:start]
-        string2 = string[end:]
+        string2 = string[end:]#can't forget to remove the trailing comma
     elif operation == parse.ADD:    
         update_int = int(string[start:end]) + int(value)
         string1 = string[:start]
@@ -95,6 +98,7 @@ def sanitize_countryname(string):
                     "Congo (Kinshasa)",
                     "Taiwan*",
                     "Bonaire, Sint Eustatius and Saba"
+                    
 ]
     
     replacements = ["",
@@ -104,12 +108,33 @@ def sanitize_countryname(string):
                              "Democratic Republic of Congo",
                              "Democratic Republic of Congo",
                              "Taiwan",
-                             "Bonaire Sint Eustatius and Saba"
+                             "Bonaire"
+                             
 ]
     
     count = 0
     for item in culprits:
         string = string.replace(item, replacements[count])
+        count += 1
+
+    return string
+
+def sanitize_contacttracing_countryname(string):
+    culprits = ["Myanmar",
+##                    "Congo",
+                    "United States"
+]
+    
+    replacements = ["Burma",
+##                             "Democratic Republic of Congo",
+                             "US"
+]
+    
+    count = 0
+    original_string = string
+    for item in culprits:
+        string = string.replace(item, replacements[count])
+        if original_string != string: return string
         count += 1
 
     return string
@@ -125,7 +150,7 @@ def load_population_table(_population_filename):
     for row in reader:
         if row['Country'] == "Sweden":
             sweden_population =  int(row['Population'])
-        population_table.append([row['Country'],row['Population']])
+        population_table.append([row['Country'],row['Population'], row['Lockdown Start'], row['Lockdown End']])
         print(population_table[count])
         count += 1
 
@@ -267,50 +292,166 @@ def compose_row(_row, _header_row, index, delimiter):
 
     day = parseop(_header_row, delimiter, index+3, 0, parse.RETRIEVE)
     day = day.replace('\r', '')
+
+
+    
     deaths = float(parseop(_row, delimiter, index+3, 0, parse.RETRIEVE))
+    lockdown = "0"
+
 ##    deaths = deaths.replace('\r', '')
     if ONE_WAVE_HERD == True:
         for row in range(0,len(population_table)):
 ##            print(population_table[row][0], country)
             if population_table[row][0] == country:
-                deaths =  float(float(deaths / float(population_table[row][1]) / one_wave_herd))
-                if deaths > .99: print(country, deaths)
+##                deaths =  float(float(deaths / float(population_table[row][1]) / one_wave_herd))
+                deaths =  float(float(deaths / float(population_table[row][1]))*100)
+                if deaths > .057: print(country, deaths)
+                lock_startday = population_table[row][2]
+                lock_endday = population_table[row][3]
+                if lock_startday != "":
+                    day_object = datetime.strptime(day, "%m/%d/%y")
+                    startday_object = datetime.strptime(lock_startday, "%m/%d/%y")
+                    if lock_endday != "":
+                        endday_object = datetime.strptime(lock_endday, "%m/%d/%y")
+                        if endday_object > day_object:
+                            if startday_object <= day_object:
+                                lockdown = "1"
+##                                print(lock_startday, day)
 ##                print("Converting deaths for " + country)
-    string = country + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter + str(deaths)
+    
+    string = country + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter +\
+    str(deaths) + delimiter + str(lockdown)
     return string
 
 
 def transpose(_proc_row_array, _days):
     countries = len(_proc_row_array)-1 #subtract header row
     print("Transposing for " +str(countries) + " countries across "+ str(_days) + " days...")
-    final_row_array = [None] * ((countries) * (_days) + 1) #Add one for the header row
+    _row_array = [None] * ((countries) * (_days) + 1) #Add one for the header row
 
     #Compose Transposed Header Row:
     country = parseop(_proc_row_array[0], ',', 1, 0, parse.RETRIEVE)
     lat = parseop(_proc_row_array[0], ',', 2, 0, parse.RETRIEVE)
     lon = parseop(_proc_row_array[0], ',', 3, 0, parse.RETRIEVE)
-    final_row_array[0] = country + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Deaths' + '\r'
+    _row_array[0] = country + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Deaths (Per Capita)' + ',' + 'Lockdown' + '\r'
 
     #Transpose the rest:
     for c in range(1, countries+1):
         for index in range(1, _days+1):
-    ##        if c * days + index + 1 >= len(final_row_array): break;
+    ##        if c * days + index + 1 >= len(_row_array): break;
             try:
-                final_row_array[(c - 1) * (_days)+index] = compose_row(_proc_row_array[c], _proc_row_array[0], index, ',') + '\r'
+                _row_array[(c - 1) * (_days)+index] = compose_row(_proc_row_array[c], _proc_row_array[0], index, ',') + '\r'
             except:
                 print("Unexpected error:", sys.exc_info()[0])
                 raise
-                print(str(c*_days+index), str(len(final_row_array)-_days))
-    ##        print(final_row_array[c * days+index])
-    print(str((c-1)*_days+index), str(len(final_row_array)))
-    return final_row_array
+                print(str(c*_days+index), str(len(_row_array)-_days))
+    ##        print(_row_array[c * days+index])
+    print(str((c-1)*_days+index), str(len(_row_array)))
+    return _row_array
 
 ##print(row_array)
 ##exit(0)
 row_array = transpose(row_array, days)
 
+
+
+def add_contact_tracing(_row_array, delimiter):
+    csvfile = open(contact_tracing_filename, newline='')
+    reader = csv.DictReader(csvfile)
+    _row_array[0] = _row_array[0].replace('\r', '')
+    _row_array[0] = _row_array[0] + delimiter + 'Contact Tracing' +'\r'
+    print("Adding Contract Tracing Data...")
+    file_country = ""
+    file_position = 0
+    skip = False
+    file_line_count = 0
+    next_country = True
+    count = 0
+    array_day = ""
+    check_array_country = ""
+    country_not_found = ""
+    for row in reader:
+        if file_line_count == 0:
+            file_line_count += 1
+            continue
+        file_country = row["Entity"]
+        file_country = sanitize_contacttracing_countryname(file_country)
+        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
+        if file_country == country_not_found:
+            continue
+##        print (file_day)
+        if skip == True: #Skip file lines if the country matches, but the day doesn't
+            if file_day >= array_day:
+                skip = False
+            else:
+                file_line_count += 1
+                continue
+        
+        if count != 0: #double-check the Country hasn't suddenly changed on us
+##            print(_row_array[count])
+##            print(check_array_country, count)
+            check_array_country = parseop(_row_array[count], delimiter, 1, 0, parse.RETRIEVE)
+            check_array_country = check_array_country.replace('\r', '')
+
+            day = parseop(_row_array[count], delimiter, 4, 0, parse.RETRIEVE)
+            array_day = datetime.strptime(day, "%m/%d/%y")
+            
+            if check_array_country != file_country:
+                skip = False
+                next_country = True
+            else:
+                _row_array[count] = _row_array[count].replace('\r','')
+                _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
+##                print(_row_array[count])
+                count += 1
+          
+       
+
+        
+        if next_country == True: #Find the country in our array
+            count = 0
+            for array_index in _row_array:
+                if count == 0:
+                    count += 1
+                    continue
+                array_country = parseop(_row_array[count], delimiter, 1, 0, parse.RETRIEVE)
+                array_country = array_country.replace('\r', '')
+                if file_country == array_country:
+                    country_not_found = ""
+                    next_country = False
+##                    print("FOUND")
+                    day = parseop(_row_array[count], delimiter, 4, 0, parse.RETRIEVE)
+                    array_day = datetime.strptime(day, "%m/%d/%y")
+                    if array_day > file_day:
+                        skip = True
+                    break
+                count += 1
+                if (count >= len(_row_array)):
+                    print(file_country + ' not found in array.')
+                    country_not_found = file_country
+                    count = 0
+                    break
+                    
+
+            file_line_count += 1
+    #Fill in gaps of contact tracing data:
+    total = 0
+    for count in range(1,len(_row_array)):
+        return_value = parseop(_row_array[count], ',', 7, 0, parse.ADD)
+        if return_value == -1:
+            _row_array[count] = _row_array[count].replace('\r', '')
+            _row_array[count] = _row_array[count] + ',' + '-1' +'\r'
+            total += 1
+    print('\n' + str(total) + " missing contact tracing data points.")
+
+
+add_contact_tracing(row_array, ',')
+
+
 csvfile_w = open(filename+'_t.csv', "w")
 csvfile_w.writelines(row_array)
 csvfile_w.close()
+
+print('\n' + "Done, filename has _t suffix.")
 
 
