@@ -7,13 +7,19 @@ import sys
 ##from decimal import Decimal as d
 from enum import Enum
 from datetime import *
-from pdfminer.pdfparser import PDFParser
-from pdfminer.pdfdocument import PDFDocument
-from pdfminer.pdfpage import PDFPage
-from pdfminer.pdfpage import PDFTextExtractionNotAllowed
-from pdfminer.pdfinterp import PDFResourceManager
-from pdfminer.pdfinterp import PDFPageInterpreter
-from pdfminer.pdfdevice import PDFDevice
+from io import StringIO
+
+from pdfminer3.converter import TextConverter #I installed both pdfminer3, this code was from https://pdfminersix.readthedocs.io/en/latest/tutorial/composable.html
+from pdfminer3.layout import LAParams
+from pdfminer3.pdfdocument import PDFDocument
+from pdfminer3.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer3.pdfpage import PDFPage
+from pdfminer3.pdfparser import PDFParser
+
+import re
+
+
+
 try:
     filename = sys.argv[1]
 except:
@@ -22,35 +28,12 @@ except:
 CONVERT_TO_RATE = True #This is no longer current
 ONE_WAVE_HERD = True
 contact_tracing_filename = "covid-contact-tracing.csv"
-other_death_causes_filename = 'LCWK9_2015.pdf'
+other_death_causes_filename = 'LCWK9_2015'
 sweden_population = int(0)
 
-def other_causes(filename):
-    # Open a PDF file.
-    fp = open(filename, 'rb')
-    # Create a PDF parser object associated with the file object.
-    parser = PDFParser(fp)
-    # Create a PDF document object that stores the document structure.
-    # Supply the password for initialization.
-    document = PDFDocument(parser)
-    # Check if the document allows text extraction. If not, abort.
-    if not document.is_extractable:
-        raise PDFTextExtractionNotAllowed
-    # Create a PDF resource manager object that stores shared resources.
-    rsrcmgr = PDFResourceManager()
-    # Create a PDF device object.
-    device = PDFDevice(rsrcmgr)
-    # Create a PDF interpreter object.
-    interpreter = PDFPageInterpreter(rsrcmgr, device)
-    # Process each page contained in the document.
-    for page in PDFPage.create_pages(document):
-        interpreter.process_page(page)
-        # receive the LTPage object for the page.
-        layout = device.get_result()
-        print(layout)
 
-other_causes(other_death_causes_filename)
-exit(0)
+
+
 
 def getstuff(filename, criterion):
     with open(filename+'.csv', "r", newline='') as csvfile_r:
@@ -64,6 +47,11 @@ def getstuff(filename, criterion):
 ##                print('^'+row[0])
                 yield row[0]
         return
+
+def writeblock(filename, data, extension):
+    csvfile_w = open(filename+'_t' + extension, "w")
+    csvfile_w.writelines(data)
+    csvfile_w.close()
 
 def writestuff(file, data):
     datawriter = csv.writer(file)
@@ -220,7 +208,7 @@ for row in getstuff(filename, throwaway):
 ##            print('!'+parse_str)
             if parse_str == value:
                 addition = True
-                print(parse_str + ':' + "Duplicate.. adding")               
+                print(parse_str + ':' + "Adding County...")               
             else: #If not the same country just add the row to our array
                 row_array.append(row)
                 break;
@@ -284,6 +272,113 @@ def convert_to_rates(_row_array):
 if CONVERT_TO_RATE == True:
     row_array = convert_to_rates(row_array)
 
+
+def other_causes(_row_array, filename, delimiter, num_causes):
+
+    if num_causes < 1:
+        num_causes = 1
+    elif num_causes > 5:
+        num_causes = 5
+
+    causes_table = []
+
+    causes_table.append("State, Cause 1, Cause 1 Value, Cause 1 Value (Per Capita)")
+
+    for index in range(0, num_causes-1):
+        causes_table[0] = causes_table[0] + delimiter + "Cause " + str(index+2) \
+                                + delimiter + "Cause Value " + str(index + 2)\
+                                + delimiter + "Cause Value " + str(index + 2) + " (Per Capita)"
+        
+    causes_table[0] = causes_table[0] + '\r'
+
+    count = 1
+    
+    output_string = StringIO()
+    print ("Processing other causes of death (2015)...")
+    with open(filename + '.pdf', 'rb') as in_file:
+        parser = PDFParser(in_file)
+        doc = PDFDocument(parser)
+        rsrcmgr = PDFResourceManager()
+        device = TextConverter(rsrcmgr, output_string, laparams=LAParams(char_margin = 20))
+        interpreter = PDFPageInterpreter(rsrcmgr, device)
+        for page in PDFPage.create_pages(doc):
+            interpreter.process_page(page)
+
+    text = str(output_string.getvalue())
+    writeblock(filename, text, '.txt')
+
+    skip_line = lambda str : -1 if str.find('\n') == -1 else str[str.find('\n')+1:]
+    isolate_line = lambda str: -1 if str.find('\n') == -1 else str[:str.find('\n')]
+
+    entry_value_per_capita = 0
+    
+    for row in _row_array:
+        if row == _row_array[0]: continue
+        
+        state = parseop(row, ',', 1, 0, parse.RETRIEVE)
+        pop = float(parseop(row, delimiter, 8, 0, parse.RETRIEVE))
+        pattern = re.compile(state)
+        search = pattern.search(text)
+        if search == None: continue
+##        print(entry1.end())
+        placeholder_string = text[search.end():]
+
+        #find first cause of death value
+        if state == "Maryland": lines = 7
+        else: lines = 3
+        
+        for i in range(0,lines): #Skip first 3 lines
+            return_value = skip_line(placeholder_string)
+            if return_value == -1: exit(-1)
+            placeholder_string = return_value
+
+        #First cause of death value (the values come before the labels)
+        entry_value = placeholder_string[:placeholder_string.find(' ')]
+        for i in range(0,10): entry_value = entry_value.replace(',', '') #Remove up to 9 commas
+
+        causes_line = state
+        
+        for index in range(0, num_causes):
+  
+            #find cause of death label
+            placeholder_string = skip_line(placeholder_string) #skip another line
+            entry_name = isolate_line(placeholder_string) #isolate it
+
+            pattern = re.compile("\D+(?= )")
+            search = pattern.search(entry_name)
+            if search == None:
+                print("Name not found..")
+            else:
+                entry_name = search.group()
+                entry_name = entry_name[1:] # remove prefix space
+
+            if pop > 0:
+                entry_value_per_capita = float(float(float(entry_value) / pop) * 100)
+            else:
+                entry_value_per_capita = -1
+
+            #Add to table
+            causes_line = causes_line + delimiter + entry_name + delimiter + entry_value \
+                                  + delimiter + str(entry_value_per_capita)
+       
+
+            #fine next cause of death value
+            placeholder_string = skip_line(placeholder_string) #skip another line
+            entry_value = placeholder_string[:placeholder_string.find(' ')]
+            for i in range(0,10): entry_value = entry_value.replace(',', '')
+            
+        causes_table.append(causes_line + '\r')
+        count += 1
+
+        
+##        print(state, entry_name, entry_string)
+            
+##    print(causes_table)
+    writeblock("us_cause_of_death_2015", causes_table, '.csv')
+
+    
+
+other_causes(row_array, other_death_causes_filename, ',', 5)
 
 
 def compose_row(_row, _header_row, index, delimiter):
@@ -455,10 +550,7 @@ def add_contact_tracing(_row_array, delimiter):
 
 ##add_contact_tracing(row_array, ',')
 
-
-csvfile_w = open(filename+'_t.csv', "w")
-csvfile_w.writelines(row_array)
-csvfile_w.close()
+writeblock(filename, row_array, '.csv')
 
 print('\n' + "Done, filename has _t suffix.")
 
