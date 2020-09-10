@@ -96,7 +96,8 @@ def sanitize_countryname(string):
                     "Congo (Brazzaville)",
                     "Congo (Kinshasa)",
                     "Bonaire, Sint Eustatius and Saba", #This one has problems because of the comma
-                    "Czechia"
+                    "Czechia",
+                    "Taiwan*"
                     
 ]
     
@@ -107,7 +108,8 @@ def sanitize_countryname(string):
                              "Democratic Republic of Congo",
                              "Democratic Republic of Congo",
                              "Bonaire",
-                             "Czech Republic"
+                             "Czech Republic",
+                             "Taiwan"
                              
 ]
     
@@ -376,7 +378,8 @@ def add_contact_tracing(_row_array, delimiter):
             continue
         file_country = row["Entity"]
         file_country = sanitize_contacttracing_countryname(file_country)
-        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
+##        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
+        file_day = datetime.strptime(row['Date'], "%Y-%m-%d")
         if file_country == country_not_found:
             continue
 ##        print (file_day)

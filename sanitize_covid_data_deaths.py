@@ -378,7 +378,9 @@ def add_contact_tracing(_row_array, delimiter):
             continue
         file_country = row["Entity"]
         file_country = sanitize_contacttracing_countryname(file_country)
-        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
+##        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
+        file_day = datetime.strptime(row['Date'], "%Y-%m-%d")
+
         if file_country == country_not_found:
             continue
 ##        print (file_day)
