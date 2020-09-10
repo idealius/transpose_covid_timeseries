@@ -1,4 +1,4 @@
-####Sanitize COVID-19 Data
+#### Sanitize COVID-19 Data
 
 Downloads time series data for deaths and confirmed cases from John Hopkins COVID-19's github
 Then, sanitizes it so it is workable in common visualization software (Excel, Tableau, QGIS, etc.) and writes to a file with absolute values and per capita values.
@@ -15,7 +15,7 @@ Instructions:
 - OR-
 Right-click 'sanitize_covid\downloadcovid.ps1' then click Run with Powershell
 
-2. From command line e.g. run
+3. From command line e.g. run
 
 'python sanitize_covid_data_cases.py'
 
@@ -27,4 +27,4 @@ or for running all of them:
 
 'sanitize_covid\sanitize_data'
 
-3. Files saved with their original filenames with '_t' suffix
+4. Files saved with their original filenames with '_t' suffix
