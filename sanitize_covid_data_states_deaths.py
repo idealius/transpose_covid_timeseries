@@ -9,7 +9,7 @@ from enum import Enum
 from datetime import *
 from io import StringIO
 
-from pdfminer3.converter import TextConverter #I installed both pdfminer3, this code was from https://pdfminersix.readthedocs.io/en/latest/tutorial/composable.html
+from pdfminer3.converter import TextConverter #I installed pdfminer3, this code was from https://pdfminersix.readthedocs.io/en/latest/tutorial/composable.html
 from pdfminer3.layout import LAParams
 from pdfminer3.pdfdocument import PDFDocument
 from pdfminer3.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -107,65 +107,14 @@ def parseop(string, delimiter, index, value, operation): #parse operation, index
     elif operation == parse.RETRIEVE:        
         return string[start:end]
     return string1 + str(update_int) + string2
-
-
-def sanitize_countryname(string):
-    culprits = ["\"", #Get rid of extra quotes
-                    "\*", #Get rid of the * in Taiwan
-                    "Korea, South",
-                    "Bosnia and Herzegovina",
-                    "Congo (Brazzaville)",
-                    "Congo (Kinshasa)",
-                    "Taiwan*",
-                    "Bonaire, Sint Eustatius and Saba"
-                    
-]
     
-    replacements = ["",
-                             "",
-                             "South Korea",
-                             "Bosnia",
-                             "Democratic Republic of Congo",
-                             "Democratic Republic of Congo",
-                             "Taiwan",
-                             "Bonaire"
-                             
-]
-    
-    count = 0
-    for item in culprits:
-        string = string.replace(item, replacements[count])
-        count += 1
-
-    return string
-
-def sanitize_contacttracing_countryname(string):
-    culprits = ["Myanmar",
-##                    "Congo",
-                    "United States"
-]
-    
-    replacements = ["Burma",
-##                             "Democratic Republic of Congo",
-                             "US"
-]
-    
-    count = 0
-    original_string = string
-    for item in culprits:
-        string = string.replace(item, replacements[count])
-        if original_string != string: return string
-        count += 1
-
-    return string
-
 
 
 
 row_array=[]
 print("Processing File..")
 
-throwaway = ["Diamond Princess", "MS Zaandam"]
+throwaway = ""#["Diamond Princess", "MS Zaandam"]
 
 count = 0
 sub_count = 0
@@ -184,7 +133,6 @@ for row in getstuff(filename, throwaway):
 
     if sub_count-8 > days: days = sub_count-8 #subtract first thirteen columns
     sub_count = 0
-    row = sanitize_countryname(row)
 
 
     addition = False
@@ -454,101 +402,7 @@ def transpose(_proc_row_array, _days):
 
 row_array = transpose(row_array, days)
 ##print(row_array)
-##exit(0)
 
-
-
-def add_contact_tracing(_row_array, delimiter):
-    csvfile = open(contact_tracing_filename, newline='')
-    reader = csv.DictReader(csvfile)
-    _row_array[0] = _row_array[0].replace('\r', '')
-    _row_array[0] = _row_array[0] + delimiter + 'Contact Tracing' +'\r'
-    print("Adding Contract Tracing Data...")
-    file_country = ""
-    file_position = 0
-    skip = False
-    file_line_count = 0
-    next_country = True
-    count = 0
-    array_day = ""
-    check_array_country = ""
-    country_not_found = ""
-    for row in reader:
-        if file_line_count == 0:
-            file_line_count += 1
-            continue
-        file_country = row["Entity"]
-        file_country = sanitize_contacttracing_countryname(file_country)
-        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
-        if file_country == country_not_found:
-            continue
-##        print (file_day)
-        if skip == True: #Skip file lines if the country matches, but the day doesn't
-            if file_day >= array_day:
-                skip = False
-            else:
-                file_line_count += 1
-                continue
-        
-        if count != 0: #double-check the Country hasn't suddenly changed on us
-##            print(_row_array[count])
-##            print(check_array_country, count)
-            check_array_country = parseop(_row_array[count], delimiter, 1, 0, parse.RETRIEVE)
-            check_array_country = check_array_country.replace('\r', '')
-
-            day = parseop(_row_array[count], delimiter, 4, 0, parse.RETRIEVE)
-            array_day = datetime.strptime(day, "%m/%d/%y")
-            
-            if check_array_country != file_country:
-                skip = False
-                next_country = True
-            else:
-                _row_array[count] = _row_array[count].replace('\r','')
-                _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
-##                print(_row_array[count])
-                count += 1
-          
-       
-
-        
-        if next_country == True: #Find the country in our array
-            count = 0
-            for array_index in _row_array:
-                if count == 0:
-                    count += 1
-                    continue
-                array_country = parseop(_row_array[count], delimiter, 1, 0, parse.RETRIEVE)
-                array_country = array_country.replace('\r', '')
-                if file_country == array_country:
-                    country_not_found = ""
-                    next_country = False
-##                    print("FOUND")
-                    day = parseop(_row_array[count], delimiter, 4, 0, parse.RETRIEVE)
-                    array_day = datetime.strptime(day, "%m/%d/%y")
-                    if array_day > file_day:
-                        skip = True
-                    break
-                count += 1
-                if (count >= len(_row_array)):
-                    print(file_country + ' not found in array.')
-                    country_not_found = file_country
-                    count = 0
-                    break
-                    
-
-            file_line_count += 1
-    #Fill in gaps of contact tracing data:
-    total = 0
-    for count in range(1,len(_row_array)):
-        return_value = parseop(_row_array[count], ',', 8, 0, parse.ADD)
-        if return_value == -1:
-            _row_array[count] = _row_array[count].replace('\r', '')
-            _row_array[count] = _row_array[count] + ',' + '-1' +'\r'
-            total += 1
-    print('\n' + str(total) + " missing contact tracing data points.")
-
-
-##add_contact_tracing(row_array, ',')
 
 writeblock(filename, row_array, '.csv')
 

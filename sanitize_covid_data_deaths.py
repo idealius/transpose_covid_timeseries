@@ -96,7 +96,8 @@ def sanitize_countryname(string):
                     "Congo (Brazzaville)",
                     "Congo (Kinshasa)",
                     "Taiwan*",
-                    "Bonaire, Sint Eustatius and Saba"
+                    "Bonaire, Sint Eustatius and Saba",
+                    "Czechia"
                     
 ]
     
@@ -107,7 +108,8 @@ def sanitize_countryname(string):
                              "Democratic Republic of Congo",
                              "Democratic Republic of Congo",
                              "Taiwan",
-                             "Bonaire"
+                             "Bonaire",
+                             "Czech Republic"
                              
 ]
     
@@ -203,7 +205,7 @@ for row in getstuff(filename, throwaway):
                 #print('!'+parse_str)
             if parse_str == value:
                 addition = True
-                print(parse_str + ':' + "Duplicate.. adding")               
+                print(parse_str + ':' + "Adding region...")               
             else: #If not the same country just add the row to our array
                 row_array.append(row)
                 break;
@@ -305,7 +307,7 @@ def compose_row(_row, _header_row, index, delimiter):
             if population_table[row][0] == country:
 ##                deaths =  float(float(deaths / float(population_table[row][1]) / one_wave_herd))
                 deaths_per_capita =  float(float(deaths / float(population_table[row][1]))*100)
-                if deaths_per_capita > .057: print(country, deaths_per_capita) #This is slightly less than Sweden's recent %
+                if deaths_per_capita > one_wave_herd: print(country, deaths_per_capita) #Sweden's rate
                 lock_startday = population_table[row][2]
                 lock_endday = population_table[row][3]
                 if lock_startday != "":
