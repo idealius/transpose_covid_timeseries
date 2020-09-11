@@ -120,6 +120,27 @@ Consolidate/refactor files with shared functions
 
 
 ### Notes
-Read sources.txt for direct links to different data sources
+Country Data
+
+John Hopkins Death Data:
+`https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv`
+
+Lockdown Data (Updated 8/22/2020):
+`https://en.wikipedia.org/wiki/COVID-19_pandemic_lockdowns`
+
+Contact Tracing Data (Updated 8/24/2020):
+`https://ourworldindata.org/grapher/covid-contact-tracing`
+
+Country Population Totals (Updated 8/22/2020):
+`https://www.worldometers.info/world-population/population-by-country/`
+
+
+State Data
+
+John Hopkins Death Data:
+`https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv`
+
+2015 Cause of death data:
+`https://www.cdc.gov/nchs/nvss/mortality/lcwk9.htm`
 
 Thank you
