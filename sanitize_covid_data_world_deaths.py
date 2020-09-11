@@ -15,7 +15,7 @@ except:
 
 CONVERT_TO_RATE = True 
 ONE_WAVE_HERD = True
-population_filename = "population_table.csv"
+population_filename = "population_and_lockdown_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
 sweden_population = int(0)
 
@@ -122,20 +122,18 @@ def sanitize_countryname(string):
 
 def sanitize_contacttracing_countryname(string):
     culprits = ["Myanmar",
-##                    "Congo",
+                    "Bosnia and Herzegovina",
                     "United States"
 ]
     
     replacements = ["Burma",
-##                             "Democratic Republic of Congo",
+                            "Bosnia",
                              "US"
 ]
     
     count = 0
-    original_string = string
     for item in culprits:
         string = string.replace(item, replacements[count])
-        if original_string != string: return string
         count += 1
 
     return string
@@ -358,7 +356,11 @@ def transpose(_proc_row_array, _days):
 ##exit(0)
 row_array = transpose(row_array, days)
 
-
+##print(row_array)
+##csvfile_w = open(filename+'test_t.csv', "w")
+##csvfile_w.writelines(row_array)
+##csvfile_w.close()
+##exit(0)
 
 def add_contact_tracing(_row_array, delimiter):
     csvfile = open(contact_tracing_filename, newline='')
@@ -387,6 +389,7 @@ def add_contact_tracing(_row_array, delimiter):
         if file_country == country_not_found:
             continue
 ##        print (file_day)
+        
         if skip == True: #Skip file lines if the country matches, but the day doesn't
             if file_day >= array_day:
                 skip = False
@@ -394,9 +397,8 @@ def add_contact_tracing(_row_array, delimiter):
                 file_line_count += 1
                 continue
         
-        if count != 0: #double-check the Country hasn't suddenly changed on us
-##            print(_row_array[count])
-##            print(check_array_country, count)
+        if count != 0: #vvv double-check the Country hasn't suddenly changed on us
+
             check_array_country = parseop(_row_array[count], delimiter, 1, 0, parse.RETRIEVE)
             check_array_country = check_array_country.replace('\r', '')
 
@@ -406,13 +408,12 @@ def add_contact_tracing(_row_array, delimiter):
             if check_array_country != file_country:
                 skip = False
                 next_country = True
-            else:
-                _row_array[count] = _row_array[count].replace('\r','')
-                _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
-##                print(_row_array[count])
-                count += 1
-          
-       
+            else: #Where we add the column
+                if file_day == array_day:
+                    _row_array[count] = _row_array[count].replace('\r','')
+                    _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
+                    count += 1
+##                    print(_row_array[count])
 
         
         if next_country == True: #Find the country in our array
@@ -429,8 +430,7 @@ def add_contact_tracing(_row_array, delimiter):
 ##                    print("FOUND")
                     day = parseop(_row_array[count], delimiter, 4, 0, parse.RETRIEVE)
                     array_day = datetime.strptime(day, "%m/%d/%y")
-                    if array_day > file_day:
-                        skip = True
+                    if array_day > file_day: skip = True
                     break
                 count += 1
                 if (count >= len(_row_array)):

@@ -61,6 +61,10 @@ Q. Why are certain regions printed out during runtime and not others?
 
 A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for world data and hard-coded at .057% for state data comparison.
 
+Q. Why does it say "Sweden's last value x of y?"
+
+A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
+
 ### Major Bugs
 9/11/2020: None known
 
@@ -68,13 +72,15 @@ A. The regions are printed to the console if they have rates higher than sweden'
 9/10/2020:
 - Per capita for confirmed cases in US doesn't have population column so it shows -1, probably causes some slight date data corruption as well
 - Congo Brazzaville sanitized to "Congo", Congo Kinshasa sanitized to "Democratic Republic of Congo" to be consistent with contact tracing csv
+- Fixed Bosnia
+- Fixed rare bug with extra ghost column being added during contact tracing processing
 
 ### Superficial Bugs
-Bonaire and surrounding islands interpreted incorrectl.
+Bonaire and surrounding islands interpreted incorrectly due to a comma within its label.
 
-US territories like Guam, Virgin Islands, etc. aren't accounted for correctly.
+US territories like Guam, Virgin Islands, etc. aren't accounted for correctly because they lack population table data.
 
-Bosnia and other territories are not handled correctly, a full list is outputted during processing and listed below in the limitations section below.
+A full list of territories with population data that isn't cross-referenced correctly with COVID-19 data is outputted during processing and listed below in the limitations section below.
 
 Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
 
@@ -97,7 +103,6 @@ Consolidate/refactor files with shared functions
 - Anguilla
 - Aruba
 - Bermuda
-- Bosnia and Herzegovina
 - British Virgin Islands
 - Cape Verde
 - Cayman Islands
