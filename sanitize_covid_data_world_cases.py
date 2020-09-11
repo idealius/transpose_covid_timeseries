@@ -11,7 +11,7 @@ from datetime import *
 try:
     filename = sys.argv[1]
 except:
-    filename = "time_series_covid19_deaths_global"
+    filename = "time_series_covid19_confirmed_global"
 
 CONVERT_TO_RATE = True 
 ONE_WAVE_HERD = True
@@ -95,9 +95,9 @@ def sanitize_countryname(string):
                     "Bosnia and Herzegovina",
                     "Congo (Brazzaville)",
                     "Congo (Kinshasa)",
-                    "Taiwan*",
-                    "Bonaire, Sint Eustatius and Saba",
-                    "Czechia"
+                    "Bonaire, Sint Eustatius and Saba", #This one has problems because of the comma
+                    "Czechia",
+                    "Taiwan*"
                     
 ]
     
@@ -105,11 +105,11 @@ def sanitize_countryname(string):
                              "",
                              "South Korea",
                              "Bosnia",
+                             "Congo",
                              "Democratic Republic of Congo",
-                             "Democratic Republic of Congo",
-                             "Taiwan",
                              "Bonaire",
-                             "Czech Republic"
+                             "Czech Republic",
+                             "Taiwan"
                              
 ]
     
@@ -130,11 +130,15 @@ def sanitize_contacttracing_countryname(string):
 ##                             "Democratic Republic of Congo",
                              "US"
 ]
+ 
     
     count = 0
     original_string = string
+
     for item in culprits:
+     
         string = string.replace(item, replacements[count])
+
         if original_string != string: return string
         count += 1
 
@@ -202,6 +206,9 @@ for row in getstuff(filename, throwaway):
         if sub_count == 1: #Lets compare country name to the previous rows country
             if value == "Sweden": sweden_index = count # May as well get this here, while we're at it..
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
+            if value == '':
+                sub_count -= 2
+                break # No country??
                 #print('!'+parse_str)
             if parse_str == value:
                 addition = True
@@ -230,7 +237,7 @@ def find_sweden_per(_row_array, _sweden_index):
         except:
             pass
     print('Sweden\'s last value:' + str(high_total) + ' out of ' + str(sweden_population))
-    return_value = float(float(high_total) / float(sweden_population))
+    return_value = float(float(high_total) / float(sweden_population)*100)
     return return_value
 
 one_wave_herd = find_sweden_per(row_array, sweden_index)
@@ -296,18 +303,18 @@ def compose_row(_row, _header_row, index, delimiter):
 
 
     
-    deaths = float(parseop(_row, delimiter, index+3, 0, parse.RETRIEVE))
-    deaths_per_capita = 0
+    cases = float(parseop(_row, delimiter, index+3, 0, parse.RETRIEVE))
+    cases_per_capita = 0
     lockdown = "0"
 
-##    deaths = deaths.replace('\r', '')
+##    cases = cases.replace('\r', '')
     if ONE_WAVE_HERD == True:
         for row in range(0,len(population_table)):
 ##            print(population_table[row][0], country)
             if population_table[row][0] == country:
-##                deaths =  float(float(deaths / float(population_table[row][1]) / one_wave_herd))
-                deaths_per_capita =  float(float(deaths / float(population_table[row][1]))*100)
-                if deaths_per_capita > one_wave_herd: print(country, deaths_per_capita) #Sweden's rate
+##                cases =  float(float(cases / float(population_table[row][1]) / one_wave_herd))
+                cases_per_capita =  float(float(cases / float(population_table[row][1]))*100)
+                if cases_per_capita > one_wave_herd: print(country, cases_per_capita) #Sweden's rate
                 lock_startday = population_table[row][2]
                 lock_endday = population_table[row][3]
                 if lock_startday != "":
@@ -319,10 +326,10 @@ def compose_row(_row, _header_row, index, delimiter):
                             if startday_object <= day_object:
                                 lockdown = "1"
 ##                                print(lock_startday, day)
-##                print("Converting deaths for " + country)
+##                print("Converting cases for " + country)
     
     string = country + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter +\
-    str(deaths) +delimiter + str(deaths_per_capita) + delimiter + str(lockdown)
+    str(cases) +delimiter + str(cases_per_capita) + delimiter + str(lockdown)
     return string
 
 
@@ -335,7 +342,7 @@ def transpose(_proc_row_array, _days):
     country = parseop(_proc_row_array[0], ',', 1, 0, parse.RETRIEVE)
     lat = parseop(_proc_row_array[0], ',', 2, 0, parse.RETRIEVE)
     lon = parseop(_proc_row_array[0], ',', 3, 0, parse.RETRIEVE)
-    _row_array[0] = country + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Deaths' +',' + 'Deaths (Per Capita)' + ',' + 'Lockdown' + '\r'
+    _row_array[0] = country + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Cases' +',' + 'Cases (Per Capita)' + ',' + 'Lockdown' + '\r'
 
     #Transpose the rest:
     for c in range(1, countries+1):
@@ -357,7 +364,7 @@ row_array = transpose(row_array, days)
 
 
 
-def add_contact_tracing(_row_array, delimiter):
+def add_contact_tracing(_row_array, delimiter): #This was a beast to write
     csvfile = open(contact_tracing_filename, newline='')
     reader = csv.DictReader(csvfile)
     _row_array[0] = _row_array[0].replace('\r', '')
@@ -380,7 +387,6 @@ def add_contact_tracing(_row_array, delimiter):
         file_country = sanitize_contacttracing_countryname(file_country)
 ##        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
         file_day = datetime.strptime(row['Date'], "%Y-%m-%d")
-
         if file_country == country_not_found:
             continue
 ##        print (file_day)
@@ -403,9 +409,9 @@ def add_contact_tracing(_row_array, delimiter):
             if check_array_country != file_country:
                 skip = False
                 next_country = True
-            else:
+            else:#Key operation of this function
                 _row_array[count] = _row_array[count].replace('\r','')
-                _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
+                _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Key operation of this function
 ##                print(_row_array[count])
                 count += 1
           

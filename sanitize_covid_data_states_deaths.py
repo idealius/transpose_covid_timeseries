@@ -114,7 +114,7 @@ def parseop(string, delimiter, index, value, operation): #parse operation, index
 row_array=[]
 print("Processing File..")
 
-throwaway = ""#["Diamond Princess", "MS Zaandam"]
+throwaway = ["Diamond Princess", "MS Zaandam"]
 
 count = 0
 sub_count = 0
@@ -153,6 +153,9 @@ for row in getstuff(filename, throwaway):
         if sub_count == 1: #Lets compare country name to the previous rows country
 ##            if value == "Sweden": sweden_index = count # May as well get this here, while we're at it..
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
+            if value == '':
+                sub_count -=2
+                break # No state??
 ##            print('!'+parse_str)
             if parse_str == value:
                 addition = True
@@ -326,7 +329,7 @@ def other_causes(_row_array, filename, delimiter, num_causes):
 
     
 
-other_causes(row_array, other_death_causes_filename, ',', 5)
+other_causes(row_array, other_death_causes_filename, ',', 5) #function only works for up to 5 cases
 
 
 def compose_row(_row, _header_row, index, delimiter):
@@ -368,7 +371,7 @@ def compose_row(_row, _header_row, index, delimiter):
 ##                print("Converting deaths for " + country)
     
     string = state + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter +\
-    str(deaths) + delimiter + str(deaths_per_capita) #+ delimiter + str(lockdown)
+    str(deaths) + delimiter + str(deaths_per_capita)  + delimiter + pop#+ delimiter + str(lockdown)
     return string
 
 
@@ -384,7 +387,8 @@ def transpose(_proc_row_array, _days):
     state = parseop(_proc_row_array[0], ',', 1, 0, parse.RETRIEVE)
     lat = parseop(_proc_row_array[0], ',', 3, 0, parse.RETRIEVE)
     lon = parseop(_proc_row_array[0], ',', 4, 0, parse.RETRIEVE)
-    _row_array[0] = state + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Deaths' + ',' + 'Deaths (Per Capita)' + '\r' #+ ',' + 'Lockdown' + '\r'
+    _row_array[0] = state + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Deaths' + ',' + 'Deaths (Per Capita)' \
+                            + ',' + 'Population' + '\r' #+ ',' + 'Lockdown' + '\r'
 
     #Transpose the rest:
     for c in range(1, states+1):

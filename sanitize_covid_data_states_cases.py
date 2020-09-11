@@ -75,6 +75,7 @@ def parsestuff(string, delimiter):
 
 
 class parse(Enum):
+    INSERT = -4
     RETRIEVE = -3
     REPLACE = -2
     ADD = -1
@@ -106,15 +107,46 @@ def parseop(string, delimiter, index, value, operation): #parse operation, index
         string2 = string[end:]
     elif operation == parse.RETRIEVE:        
         return string[start:end]
-    return string1 + str(update_int) + string2
-    
+    elif operation == parse.INSERT:
+        string1 = string[:end+1]
+        string2 = string[end+1:]
+        return string1 + str(value) + delimiter + string2
 
+    return string1 + str(update_int) + string2
+
+
+population_table = []
+
+def load_population_table(_population_filename):
+    global population_table
+    try:
+        csvfile = open(_population_filename, newline='')
+        reader = csv.DictReader(csvfile)
+    except:
+        print("Please run sanitize_covid_state_deaths.py first to generate populations...")
+        exit(-1)
+    count = 0
+    index = 0
+    last_country = ""
+    for row in reader:
+        if count == 0:
+            count +=1
+            continue #skip first line, not sure if this is necessary but it shouldn't hurt
+        if row['Province_State'] != last_country:
+            population_table.append([row['Province_State'],row['Population']])
+            print(population_table[index])
+            index += 1
+        last_country = row['Province_State']
+        count += 1
+
+print("Extracting populations from state deaths output...")
+load_population_table("time_series_covid19_deaths_US_t.csv")
 
 
 row_array=[]
 print("Processing File..")
 
-throwaway = ""#["Diamond Princess", "MS Zaandam"]
+throwaway = ["Diamond Princess", "MS Zaandam"]
 
 count = 0
 sub_count = 0
@@ -126,12 +158,12 @@ for row in getstuff(filename, throwaway):
     for i in range(1,7): #Skip first 6 columns
         row=row[row.find(',')+1:] 
 
-    if count == 0: #Skip first row header
+    if count == 0: #Append first row header and skip
         row_array.append(row)
         count += 1
         continue
 
-    if sub_count-8 > days: days = sub_count-8 #subtract first thirteen columns
+    if sub_count-7 > days: days = sub_count-7 #subtract next 7 columns
     sub_count = 0
 
 
@@ -153,6 +185,10 @@ for row in getstuff(filename, throwaway):
         if sub_count == 1: #Lets compare country name to the previous rows country
 ##            if value == "Sweden": sweden_index = count # May as well get this here, while we're at it..
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
+            if value == '':  # No state??
+                addition = False
+                count -= 2
+                break
 ##            print('!'+parse_str)
             if parse_str == value:
                 addition = True
@@ -196,7 +232,7 @@ def convert_to_rates(_row_array):
             sub_count += 1 #sub_count starts at 1
     ####            print(value)
     ##            return_value = parseop(proc_row_array[count], ',', sub_count, 0, parse.REPLACE)            
-            if sub_count > 9:
+            if sub_count > 8:
     ##            print("Subracting")
                 return_value = parseop(_proc_row_array[count], ',', sub_count, _value-prev_value, parse.REPLACE)
                 if return_value == -1:
@@ -205,7 +241,7 @@ def convert_to_rates(_row_array):
                     pass
                 else:
                     _proc_row_array[count] = return_value
-            elif sub_count == 9: #first value should always be averaged (this is for China)
+            elif sub_count == 8: #first value should always be averaged (this is for China)
     ##            print(value)
                 return_value = parseop(_proc_row_array[count], ',', sub_count, _value/2, parse.REPLACE)
                 _proc_row_array[count] = return_value
@@ -332,44 +368,41 @@ def other_causes(_row_array, filename, delimiter, num_causes):
 
 def compose_row(_row, _header_row, index, delimiter):
     global one_wave_herd
+    global population_table
 ##    for i in range(1,20):
 ##        print(i, parseop(_row, delimiter, i, 0, parse.RETRIEVE))
     state = parseop(_row, delimiter, 1, 0, parse.RETRIEVE)
     lat = parseop(_row, delimiter, 3, 0, parse.RETRIEVE)
     lon = parseop(_row, delimiter, 4, 0, parse.RETRIEVE)
-    pop = parseop(_row, delimiter, 8, 0, parse.RETRIEVE)
-    day = parseop(_header_row, delimiter, index+6, 0, parse.RETRIEVE)
+##    pop = parseop(_row, delimiter, 8, 0, parse.RETRIEVE)
+    day = parseop(_header_row, delimiter, index+5, 0, parse.RETRIEVE)
 ##    print(state, pop)
     day = day.replace('\r', '')
 
-
+    pop = "-1"
     
-    cases = float(parseop(_row, delimiter, index+8, 0, parse.RETRIEVE))
+    cases = float(parseop(_row, delimiter, index+7, 0, parse.RETRIEVE))
 ##    lockdown = "0"
 
 ##    cases = cases.replace('\r', '')
     if ONE_WAVE_HERD == True:
 ##        print (cases, pop)
+        #look up population by state
+        count = 0
+        for index in range(0, len(population_table)):
+            if population_table[index][0] == state:
+                pop = population_table[index][1]
+                break
+                           
         if float(pop) > 0:
             cases_per_capita =  float(float(cases / float(pop))*100)
         else:
             cases_per_capita = -1
         if cases_per_capita > .057: print(state, cases_per_capita) #This is slightly less than Sweden's recent % for deaths
-##                lock_startday = population_table[row][2]
-##                lock_endday = population_table[row][3]
-##                if lock_startday != "":
-##                    day_object = datetime.strptime(day, "%m/%d/%y")
-##                    startday_object = datetime.strptime(lock_startday, "%m/%d/%y")
-##                    if lock_endday != "":
-##                        endday_object = datetime.strptime(lock_endday, "%m/%d/%y")
-##                        if endday_object > day_object:
-##                            if startday_object <= day_object:
-##                                lockdown = "1"
-##                                print(lock_startday, day)
-##                print("Converting cases for " + country)
+
     
     string = state + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter +\
-    str(cases) + delimiter + str(cases_per_capita) #+ delimiter + str(lockdown)
+    str(cases) + delimiter + str(cases_per_capita) + delimiter + pop
     return string
 
 
@@ -385,7 +418,8 @@ def transpose(_proc_row_array, _days):
     state = parseop(_proc_row_array[0], ',', 1, 0, parse.RETRIEVE)
     lat = parseop(_proc_row_array[0], ',', 3, 0, parse.RETRIEVE)
     lon = parseop(_proc_row_array[0], ',', 4, 0, parse.RETRIEVE)
-    _row_array[0] = state + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Cases' + ',' + 'Cases (Per Capita)' + '\r' #+ ',' + 'Lockdown' + '\r'
+    _row_array[0] = state + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Cases' + ',' + 'Cases (Per Capita)' \
+                            +','+ 'Population'+ '\r' #+ ',' + 'Lockdown' + '\r'
 
     #Transpose the rest:
     for c in range(1, states+1):

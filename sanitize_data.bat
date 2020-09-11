@@ -1,4 +1,4 @@
-python sanitize_covid_data_cases.py
-python sanitize_covid_data_deaths.py
-python sanitize_covid_data_states_cases.py
+python sanitize_covid_data_world_cases.py
+python sanitize_covid_data_world_deaths.py
 python sanitize_covid_data_states_deaths.py
+python sanitize_covid_data_states_cases.py
