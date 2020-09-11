@@ -1,9 +1,12 @@
 # Sanitize COVID-19 Data
 
-Downloads time series data for deaths and confirmed cases from John Hopkins COVID-19's github
+Downloads time series data for deaths and confirmed cases from John Hopkins COVID-19's github. 
 Then, sanitizes and transposes it so it is workable in common visualization software (Excel, Tableau, QGIS, etc.) for a timelapse and writes to a file with absolute values and per capita values **in percent (multiplied by 100.)**
 
-Requirements: Windows 10 (Maybe Windows 8/7 would work)
+### Requirements
+
+- Windows 10 (Maybe Windows 8/7 would work)
+- Some CSV reading ability (Excel, LibreOffice Calc, Google Sheets, etc.)
 
 ### Instructions
 
