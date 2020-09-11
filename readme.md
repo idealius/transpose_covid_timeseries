@@ -87,7 +87,7 @@ A full list of territories with population data that isn't cross-referenced corr
 Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
 
 ### Potential Enhancements
-Add scripts for rate conversion / transposing counties
+Add scripts for county (not count**r**y) rate conversion / transposing
 
 Add arguments for different data transformation options
 
