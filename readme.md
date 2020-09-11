@@ -72,7 +72,7 @@ A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrar
 9/11/2020: None known
 
 ### Fixed Bugs
-9/10/2020:
+9/11/2020:
 - Per capita for confirmed cases in US doesn't have population column so it shows -1, probably causes some slight date data corruption as well
 - Congo Brazzaville sanitized to "Congo", Congo Kinshasa sanitized to "Democratic Republic of Congo" to be consistent with contact tracing csv
 - Fixed Bosnia
