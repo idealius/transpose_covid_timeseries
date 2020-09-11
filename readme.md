@@ -9,11 +9,13 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 - Some CSV reading ability (Excel, LibreOffice Calc, Google Sheets, etc.)
 
 ### Features:
+- Converts US county data to state data
+- Converts province data to country data 
 - Converts totals to rates as it is usually easier to add a running total in use cases versus determining a rate from a total
 - Transposes dates so each row has a date, country, and case/death data both absolute and per capita
 - Creates `us_cause_of_death_2015_t.csv` from CDC 2015 pdf data listing the top 5 causes of death per state absolute and per capita
 - Adds lockdown and contact tracing data to world output files (must be manually updated from `https://ourworldindata.org/grapher/covid-contact-tracing`)
-- All output files should be easily joined with other tables, e.g. `population_table.csv`
+- All output files should be easily joined with other tables, e.g. `population_and_lockdown_table.csv`
 
 ### Instructions
 
