@@ -88,11 +88,11 @@ Add better column interpretation (quotes with or without commas)
 Consolidate/refactor files with shared functions
 
 ### Limitations
-1. The scripts have basic adaptation in a few places, but they rely heavily on the source csv files maintaining the same format, (e.g. the same number of columns matters a lot, but not the column names in certain cases.) **This means the scripts can immediately break because an author of the original CSV files changed something seemingly simple.** Just today they changed the confirmed (state) cases to have a couple of extra rows, one with what I believe to be a total and it broke the script.
-2. Must run state death python to retrieve population data for state cases.
+1. The scripts have basic adaptation in a few places, but they rely heavily on the source csv files maintaining the same format, (e.g. aside from the dates, the same number of columns matters a lot, but not the column names in certain cases.) **This means the scripts can immediately break because an author of the original CSV files changed something seemingly simple.** Just today they changed the confirmed (state) cases to have a couple of extra rows, one with what I believe to be a total and it broke the script.
+2. Must run state death python script to retrieve population data for state cases python script.
 3. The contact tracing data must be downloaded manually, and they changed the date format on me once already, so it might need periodic code modification to maintain.
-4. China has data before 1/22 that can't be included because John Hopkins / Institutions did not include it so the rate for the first date (1/22) is halved to adjust for this
-5. Execution speed is not a high priority since it only needs to be ran once per day. Also, sometimes there is duplicate file reading/writing (such as with the PDF interpretation of top causes of death) and calculations. The whole thing should only take a couple of minutes to run, though.
+4. China has data before 1/22 that can't be included because John Hopkins / reporting institutions did not include it so the rate for the first date (1/22) is halved to adjust for this
+5. Execution speed is not a high priority since it only needs to be ran once per day. Also, sometimes there is duplicate file reading/writing (such as with the PDF interpretation of top causes of death) and calculations.
 6. Cruise ships "Diamond Princess", "MS Zaandam" culled from world data.
 7. For world output, these regions need script adjustment for contact tracing / lockdown, or aren't releasing/tracking COVID data:
 - Anguilla
