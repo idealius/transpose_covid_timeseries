@@ -1,10 +1,5 @@
 import csv
-##import keyboard as keys
-##import gc
 import sys
-##import math
-##from decimal import *
-##from decimal import Decimal as d
 from enum import Enum
 from datetime import *
 from io import StringIO
@@ -58,10 +53,6 @@ def writestuff(file, data):
     datawriter.writerow(data)
     return
 
-##def writeblock(file, data):
-##    datawriter = csv.writer(file)
-##    datawriter.writerow(data)
-##    return
 
 def parsestuff(string, delimiter):
     _string = string+',' #Add a trailing comma at end of complete line to account for the last block
@@ -179,11 +170,9 @@ for row in getstuff(filename, throwaway):
             pass
             
         sub_count += 1 #sub_count starts at 1
-##        print(sub_count)
-##            print('~'+value+'~')
+
         
         if sub_count == 1: #Lets compare country name to the previous rows country
-##            if value == "Sweden": sweden_index = count # May as well get this here, while we're at it..
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
             if value == '':  # No state??
                 addition = False
@@ -230,8 +219,7 @@ def convert_to_rates(_row_array):
                 pass
                 
             sub_count += 1 #sub_count starts at 1
-    ####            print(value)
-    ##            return_value = parseop(proc_row_array[count], ',', sub_count, 0, parse.REPLACE)            
+
             if sub_count > 8:
     ##            print("Subracting")
                 return_value = parseop(_proc_row_array[count], ',', sub_count, _value-prev_value, parse.REPLACE)
@@ -369,24 +357,20 @@ def other_causes(_row_array, filename, delimiter, num_causes):
 def compose_row(_row, _header_row, index, delimiter):
     global one_wave_herd
     global population_table
-##    for i in range(1,20):
-##        print(i, parseop(_row, delimiter, i, 0, parse.RETRIEVE))
+
     state = parseop(_row, delimiter, 1, 0, parse.RETRIEVE)
     lat = parseop(_row, delimiter, 3, 0, parse.RETRIEVE)
     lon = parseop(_row, delimiter, 4, 0, parse.RETRIEVE)
-##    pop = parseop(_row, delimiter, 8, 0, parse.RETRIEVE)
+
     day = parseop(_header_row, delimiter, index+5, 0, parse.RETRIEVE)
-##    print(state, pop)
+
     day = day.replace('\r', '')
 
     pop = "-1"
     
     cases = float(parseop(_row, delimiter, index+7, 0, parse.RETRIEVE))
-##    lockdown = "0"
 
-##    cases = cases.replace('\r', '')
     if ONE_WAVE_HERD == True:
-##        print (cases, pop)
         #look up population by state
         count = 0
         for index in range(0, len(population_table)):
@@ -408,9 +392,7 @@ def compose_row(_row, _header_row, index, delimiter):
 
 def transpose(_proc_row_array, _days):
     states = len(_proc_row_array)-1 #subtract header row
-##    for s in range(1,states):
-##        print(s, _proc_row_array[s][:10])
-##    exit(0)
+
     print("Transposing for " +str(states) + " states across "+ str(_days) + " days...")
     _row_array = [None] * ((states) * (_days) + 1) #Add one for the header row
 

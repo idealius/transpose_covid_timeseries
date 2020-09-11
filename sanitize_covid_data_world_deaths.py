@@ -1,10 +1,6 @@
 import csv
-##import keyboard as keys
-##import gc
 import sys
-##import math
-##from decimal import *
-##from decimal import Decimal as d
+
 from enum import Enum
 from datetime import *
 
@@ -37,10 +33,6 @@ def writestuff(file, data):
     datawriter.writerow(data)
     return
 
-##def writeblock(file, data):
-##    datawriter = csv.writer(file)
-##    datawriter.writerow(data)
-##    return
 
 def parsestuff(string, delimiter):
     _string = string+',' #Add a trailing comma at end of complete line to account for the last block
@@ -194,8 +186,7 @@ for row in getstuff(filename, throwaway):
             pass
             
         sub_count += 1 #sub_count starts at 1
-##        print(sub_count)
-##            print('~'+value+'~')
+
         
         if sub_count == 1: #Lets compare country name to the previous rows country
             if value == "Sweden": sweden_index = count # May as well get this here, while we're at it..
@@ -203,7 +194,7 @@ for row in getstuff(filename, throwaway):
             if value == '':
                 sub_count -= 2
                 break # No country??
-                #print('!'+parse_str)
+
             if parse_str == value:
                 addition = True
                 print(parse_str + ':' + "Adding region...")               
@@ -221,7 +212,6 @@ for row in getstuff(filename, throwaway):
     if addition != True: # Looks good, lets move to the next row...
         count +=1
 
-##print(row_array)
 
 def find_sweden_per(_row_array, _sweden_index):
     high_total = 0
@@ -258,8 +248,7 @@ def convert_to_rates(_row_array):
                 pass
                 
             sub_count += 1 #sub_count starts at 1
-    ####            print(value)
-    ##            return_value = parseop(proc_row_array[count], ',', sub_count, 0, parse.REPLACE)            
+          
             if sub_count > 4:
     ##            print("Subracting")
                 return_value = parseop(_proc_row_array[count], ',', sub_count, _value-prev_value, parse.REPLACE)
@@ -352,15 +341,10 @@ def transpose(_proc_row_array, _days):
     print(str((c-1)*_days+index), str(len(_row_array)))
     return _row_array
 
-##print(row_array)
-##exit(0)
+
 row_array = transpose(row_array, days)
 
-##print(row_array)
-##csvfile_w = open(filename+'test_t.csv', "w")
-##csvfile_w.writelines(row_array)
-##csvfile_w.close()
-##exit(0)
+
 
 def add_contact_tracing(_row_array, delimiter):
     csvfile = open(contact_tracing_filename, newline='')

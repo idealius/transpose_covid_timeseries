@@ -1,10 +1,5 @@
 import csv
-##import keyboard as keys
-##import gc
 import sys
-##import math
-##from decimal import *
-##from decimal import Decimal as d
 from enum import Enum
 from datetime import *
 from io import StringIO
@@ -58,10 +53,6 @@ def writestuff(file, data):
     datawriter.writerow(data)
     return
 
-##def writeblock(file, data):
-##    datawriter = csv.writer(file)
-##    datawriter.writerow(data)
-##    return
 
 def parsestuff(string, delimiter):
     _string = string+',' #Add a trailing comma at end of complete line to account for the last block
@@ -147,16 +138,14 @@ for row in getstuff(filename, throwaway):
             pass
             
         sub_count += 1 #sub_count starts at 1
-##        print(sub_count)
-##            print('~'+value+'~')
+
         
         if sub_count == 1: #Lets compare country name to the previous rows country
-##            if value == "Sweden": sweden_index = count # May as well get this here, while we're at it..
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
             if value == '':
                 sub_count -=2
                 break # No state??
-##            print('!'+parse_str)
+
             if parse_str == value:
                 addition = True
                 print(parse_str + ':' + "Adding County...")               
@@ -197,8 +186,6 @@ def convert_to_rates(_row_array):
                 pass
                 
             sub_count += 1 #sub_count starts at 1
-    ####            print(value)
-    ##            return_value = parseop(proc_row_array[count], ',', sub_count, 0, parse.REPLACE)            
             if sub_count > 9:
     ##            print("Subracting")
                 return_value = parseop(_proc_row_array[count], ',', sub_count, _value-prev_value, parse.REPLACE)
@@ -334,22 +321,16 @@ other_causes(row_array, other_death_causes_filename, ',', 5) #function only work
 
 def compose_row(_row, _header_row, index, delimiter):
     global one_wave_herd
-##    for i in range(1,20):
-##        print(i, parseop(_row, delimiter, i, 0, parse.RETRIEVE))
     state = parseop(_row, delimiter, 1, 0, parse.RETRIEVE)
     lat = parseop(_row, delimiter, 3, 0, parse.RETRIEVE)
     lon = parseop(_row, delimiter, 4, 0, parse.RETRIEVE)
     pop = parseop(_row, delimiter, 8, 0, parse.RETRIEVE)
     day = parseop(_header_row, delimiter, index+6, 0, parse.RETRIEVE)
-##    print(state, pop)
     day = day.replace('\r', '')
 
 
     
     deaths = float(parseop(_row, delimiter, index+8, 0, parse.RETRIEVE))
-##    lockdown = "0"
-
-##    deaths = deaths.replace('\r', '')
     if ONE_WAVE_HERD == True:
 ##        print (deaths, pop)
         if float(pop) > 0:
@@ -357,19 +338,7 @@ def compose_row(_row, _header_row, index, delimiter):
         else:
             deaths_per_capita = -1
         if deaths_per_capita > .057: print(state, deaths_per_capita) #This is slightly less than Sweden's recent %
-##                lock_startday = population_table[row][2]
-##                lock_endday = population_table[row][3]
-##                if lock_startday != "":
-##                    day_object = datetime.strptime(day, "%m/%d/%y")
-##                    startday_object = datetime.strptime(lock_startday, "%m/%d/%y")
-##                    if lock_endday != "":
-##                        endday_object = datetime.strptime(lock_endday, "%m/%d/%y")
-##                        if endday_object > day_object:
-##                            if startday_object <= day_object:
-##                                lockdown = "1"
-##                                print(lock_startday, day)
-##                print("Converting deaths for " + country)
-    
+
     string = state + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter +\
     str(deaths) + delimiter + str(deaths_per_capita)  + delimiter + pop#+ delimiter + str(lockdown)
     return string
@@ -377,9 +346,7 @@ def compose_row(_row, _header_row, index, delimiter):
 
 def transpose(_proc_row_array, _days):
     states = len(_proc_row_array)-1 #subtract header row
-##    for s in range(1,states):
-##        print(s, _proc_row_array[s][:10])
-##    exit(0)
+
     print("Transposing for " +str(states) + " states across "+ str(_days) + " days...")
     _row_array = [None] * ((states) * (_days) + 1) #Add one for the header row
 
