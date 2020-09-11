@@ -6,6 +6,7 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 ### Requirements
 
 - Windows 10 (Maybe Windows 8/7 would work)
+- Python 3.x
 - Some CSV reading ability (Excel, LibreOffice Calc, Google Sheets, etc.)
 
 ### Features:
