@@ -59,7 +59,7 @@ Source: `https://ourworldindata.org/grapher/covid-contact-tracing`
 
 Q. Why are certain regions printed out during runtime and not others?
 
-A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation.
+A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for World data and hard-coded at .057% for state data comparison.
 
 ### Major Bugs
 9/11/2020: None known
