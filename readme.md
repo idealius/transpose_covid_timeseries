@@ -119,8 +119,8 @@ Consolidate/refactor files with shared functions
 
 
 
-### Notes
-Country Data
+### Sources & Notes
+#### Country Data
 
 John Hopkins Death and Confirmed Cases Data:
 
@@ -145,7 +145,7 @@ Country Population Totals (Updated 8/22/2020):
 `https://www.worldometers.info/world-population/population-by-country/`
 
 
-State Data
+#### State Data
 
 John Hopkins Death Data:
 
