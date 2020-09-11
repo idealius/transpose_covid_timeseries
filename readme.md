@@ -41,7 +41,7 @@ or
 
 or for running all of them:
 
-`sanitize_covid\sanitize_data`
+`sanitize_data.bat`
 
 5. Files saved with their original filenames with '_t' suffix
 
