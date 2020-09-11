@@ -59,7 +59,7 @@ Source: `https://ourworldindata.org/grapher/covid-contact-tracing`
 
 Q. Why are certain regions printed out during runtime and not others?
 
-A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for World data and hard-coded at .057% for state data comparison.
+A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for world data and hard-coded at .057% for state data comparison.
 
 ### Major Bugs
 9/11/2020: None known
@@ -70,16 +70,21 @@ A. The regions are printed to the console if they have rates higher than sweden'
 - Congo Braz sanitized to "Congo", Congo Kinshasa sanitized to "Democratic Republic of Congo" to be consistant with contact tracing csv
 
 ### Superficial Bugs
-Bonaire and surrounding islands incorrectly interpreted
-US territories like Guam, Virgin Islands, etc. aren't accounted for correctly
-Bosnia and other territories are not handled correctly, a full list is outputted during processing
+Bonaire and surrounding islands incorrectly interpreted.
+
+US territories like Guam, Virgin Islands, etc. aren't accounted for correctly.
+
+Bosnia and other territories are not handled correctly, a full list is outputted during processing and listed below in the limitations section.
+
 Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lat and lon
-I believe the Diamond Princess shows up in state data
 
 ### Potential Enhancements
 Add scripts for rate conversion / transposing counties
+
 Add arguments for different data transformation options
+
 Add better column interpretation (quotes with or without commas)
+
 Consolidate/refactor files with shared functions
 
 ### Limitations
@@ -117,4 +122,5 @@ Consolidate/refactor files with shared functions
 
 ### Notes
 Read sources.txt for direct links to different data sources
+
 Thank you
