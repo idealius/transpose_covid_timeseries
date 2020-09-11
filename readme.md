@@ -97,24 +97,24 @@ Consolidate/refactor files with shared functions
 - Anguilla
 - Aruba
 - Bermuda
-- Bosnia
-- British (?)
-- Cape
-- Cayman
-- Falkland
+- Bosnia and Herzegovina
+- British Virgin Islands
+- Cape Verde
+- Cayman Islands
+- Falkland Islands
 - Gibraltar
 - Greenland
 - Guam
-- Hong
+- Hong Kong
 - Macao
 - Montserrat
 - Palestine
-- Puerto
-- Solomon
+- Puerto Rico
+- Solomon Islands
 - Swaziland
 - Timor
 - Turkmenistan
-- Turks
+- Turks and Caicos Islands
 - Vanuatu
 
 
