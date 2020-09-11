@@ -43,7 +43,9 @@ or for running all of them:
 5. Files saved with their original filenames with '_t' suffix
 
 ### FAQ:
-1. What do the different levels of Contract Tracing mean? (-1,0,1,2)
+Q. What do the different levels of Contract Tracing mean? (-1,0,1,2)
+
+A.
 
 -1 : No data
 
@@ -55,8 +57,9 @@ or for running all of them:
 
 Source: `https://ourworldindata.org/grapher/covid-contact-tracing`
 
-2. Why are certain regions printed out during runtime and not others?
-The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation.
+Q. Why are certain regions printed out during runtime and not others?
+
+A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation.
 
 ### Major Bugs
 9/11/2020: None known
