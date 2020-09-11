@@ -28,7 +28,7 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 - OR-
 Right-click `downloadcovid.ps1` then click Run with Powershell
 
-4. From command line run:
+4. From command line run one of the python scripts:
 
 `python sanitize_covid_data_cases.py`
 
