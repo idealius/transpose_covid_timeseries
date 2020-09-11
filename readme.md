@@ -58,7 +58,7 @@ A.
 
 2 : All known cases contact traced
 
-Source: `https://ourworldindata.org/grapher/covid-contact-tracing`
+Source: (https://ourworldindata.org/grapher/covid-contact-tracing)
 
 Q. Why are certain regions printed out during runtime and not others?
 
@@ -132,33 +132,33 @@ Consolidate/refactor files with shared functions
 
 John Hopkins Death and Confirmed Cases Data:
 
-`https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv` 
+(https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv) 
 
-`https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv` 
+(https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv) 
 
 Lockdown Data (Updated 8/22/2020):
 
-`https://en.wikipedia.org/wiki/COVID-19_pandemic_lockdowns`
+(https://en.wikipedia.org/wiki/COVID-19_pandemic_lockdowns)
 
 Contact Tracing Data:
 
-`https://ourworldindata.org/grapher/covid-contact-tracing`
+(https://ourworldindata.org/grapher/covid-contact-tracing)
 
 Country Population Totals (Updated 8/22/2020):
 
-`https://www.worldometers.info/world-population/population-by-country/`
+(https://www.worldometers.info/world-population/population-by-country/)
 
 
 #### State Data
 
 John Hopkins Death and Confirmed Cases Data:
 
-`https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv` 
+(https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) 
 
-`https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv` 
+(https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv) 
 
 2015 Cause of death data:
 
-`https://www.cdc.gov/nchs/nvss/mortality/lcwk9.htm`
+(https://www.cdc.gov/nchs/nvss/mortality/lcwk9.htm)
 
 Thank you
