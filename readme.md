@@ -128,7 +128,7 @@ John Hopkins Death Data:
 Lockdown Data (Updated 8/22/2020):
 `https://en.wikipedia.org/wiki/COVID-19_pandemic_lockdowns`
 
-Contact Tracing Data (Updated 8/24/2020):
+Contact Tracing Data:
 `https://ourworldindata.org/grapher/covid-contact-tracing`
 
 Country Population Totals (Updated 8/22/2020):
