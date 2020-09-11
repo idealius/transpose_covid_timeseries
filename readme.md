@@ -44,10 +44,15 @@ or for running all of them:
 
 ### FAQ:
 1. What do the different levels of Contract Tracing mean? (-1,0,1,2)
+
 -1 : No data
+
 0 : None
+
 1 : Some contact tracing
+
 2 : All known cases contact traced
+
 Source: `https://ourworldindata.org/grapher/covid-contact-tracing`
 
 2. Why are certain regions printed out during runtime and not others?
