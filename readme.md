@@ -70,13 +70,13 @@ A. The regions are printed to the console if they have rates higher than sweden'
 - Congo Braz sanitized to "Congo", Congo Kinshasa sanitized to "Democratic Republic of Congo" to be consistant with contact tracing csv
 
 ### Superficial Bugs
-Bonaire and surrounding islands incorrectly interpreted.
+Bonaire and surrounding islands interpreted incorrectl.
 
 US territories like Guam, Virgin Islands, etc. aren't accounted for correctly.
 
-Bosnia and other territories are not handled correctly, a full list is outputted during processing and listed below in the limitations section.
+Bosnia and other territories are not handled correctly, a full list is outputted during processing and listed below in the limitations section below.
 
-Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lat and lon
+Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
 
 ### Potential Enhancements
 Add scripts for rate conversion / transposing counties
