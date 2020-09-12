@@ -12,7 +12,7 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 ### Features:
 - Converts US county data to state data
 - Converts province data to country data 
-- Converts totals to rates as it is usually easier to add a running total in use cases versus determining a rate from a total
+- Converts totals to rates
 - Transposes dates so each row has a date, country, and case/death data both absolute and per capita
 - Creates `us_cause_of_death_2015_t.csv` from CDC 2015 pdf data listing the top 5 causes of death per state absolute and per capita
 - Adds lockdown and contact tracing data to world output files (must be manually updated from `https://ourworldindata.org/grapher/covid-contact-tracing`)
@@ -27,17 +27,19 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 
 `pip3 install pdfminer3`
 
-3. Install wget, add to PATH, then run `downloadcovid.bat`
-- OR-
-Right-click `downloadcovid.ps1` then click Run with Powershell
+3. Right-click `downloadcovid.ps1` then click Run with Powershell
+- OR Install wget, add to PATH, then run `downloadcovid.bat`
+
 
 4. From command line run one of the python scripts:
 
-`python sanitize_covid_data_cases.py`
+e.g.
+
+`python sanitize_covid_data_world_cases.py`
 
 or
 
-`sanitize_covid_data_cases.py`
+`sanitize_covid_data_world_cases.py`
 
 or for running all of them:
 
