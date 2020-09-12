@@ -1,6 +1,6 @@
 # Sanitize COVID-19 Data
 
-Downloads time series data for deaths and confirmed cases from John Hopkins COVID-19's github. 
+Downloads time series data for deaths and confirmed cases from Johns Hopkins COVID-19's github. 
 Then, sanitizes and transposes it so it is workable in common visualization software (Excel, Tableau, QGIS, etc.) for a timelapse and writes to a file with absolute values and per capita values **in percent (multiplied by 100.)**
 
 ### Requirements
@@ -87,7 +87,7 @@ US territories like Guam, Virgin Islands, etc. aren't accounted for correctly be
 
 A full list of territories with population data that isn't cross-referenced correctly with COVID-19 data is outputted during processing and listed below in the limitations section below.
 
-Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
+Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's latitude and longitude
 
 ### Potential Enhancements
 Add scripts for county (not count**r**y) rate conversion / transposing
@@ -101,7 +101,7 @@ Consolidate/refactor files with shared functions
 ### Limitations
 1. The scripts have basic adaptation in a few places, but they rely heavily on the source csv files maintaining the same format, (e.g. aside from the dates, the same number of columns matters a lot, but not the column names in certain cases.) **This means the scripts can immediately break because an author of the original CSV files changed something seemingly simple.** Just today they changed the confirmed (state) cases to have a couple of extra rows, one with what I believe to be a total and it broke the script which required fixing. Additionally, the contact tracing data must be downloaded manually, and they changed the date format on me once already, so it might need periodic code modification to maintain.
 2. Must run state death python script to retrieve population data for state cases python script.
-3. China has data before 1/22 that can't be included because John Hopkins / reporting institutions did not include it so the rate for the first date (1/22) is halved to adjust for this
+3. China has data before 1/22 that can't be included because Johns Hopkins / reporting institutions did not include it so the rate for the first date (1/22) is halved to adjust for this
 4. Execution speed is not a high priority since it only needs to be ran once per day. Also, sometimes there is duplicate file reading/writing (such as with the PDF interpretation of top causes of death) and calculations.
 5. Cruise ships "Diamond Princess", "MS Zaandam" culled from world data.
 6. For world output, these regions need script adjustment for contact tracing / lockdown, or aren't releasing/tracking COVID data:
@@ -132,7 +132,7 @@ Consolidate/refactor files with shared functions
 ### Sources & Notes
 #### Country Data
 
-John Hopkins Death and Confirmed Cases Data:
+Johns Hopkins Death and Confirmed Cases Data:
 
 (https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv) 
 
@@ -153,7 +153,7 @@ Country Population Totals (Updated 8/22/2020):
 
 #### State Data
 
-John Hopkins Death and Confirmed Cases Data:
+Johns Hopkins Death and Confirmed Cases Data:
 
 (https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) 
 
