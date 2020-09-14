@@ -20,7 +20,7 @@ try:
 except:
     filename = "time_series_covid19_deaths_US"
 
-CONVERT_TO_RATE = True #This is no longer current
+CONVERT_TO_RATE = False #Versus totals
 ONE_WAVE_HERD = True
 contact_tracing_filename = "covid-contact-tracing.csv"
 other_death_causes_filename = 'LCWK9_2015'
@@ -249,6 +249,7 @@ def other_causes(_row_array, filename, delimiter, num_causes):
     isolate_line = lambda str: -1 if str.find('\n') == -1 else str[:str.find('\n')]
 
     entry_value_per_capita = 0
+    entry_value = 0
     
     for row in _row_array:
         if row == _row_array[0]: continue
@@ -262,24 +263,22 @@ def other_causes(_row_array, filename, delimiter, num_causes):
         placeholder_string = text[search.end():]
 
         #find first cause of death value
-        if state == "Maryland": lines = 7
-        else: lines = 3
+        if state == "Maryland": lines = 8
+        else: lines = 4
         
-        for i in range(0,lines): #Skip first 3 lines
+        for i in range(0,lines): #Skip first 4 lines
             return_value = skip_line(placeholder_string)
             if return_value == -1: exit(-1)
             placeholder_string = return_value
 
-        #First cause of death value (the values come before the labels)
-        entry_value = placeholder_string[:placeholder_string.find(' ')]
-        for i in range(0,10): entry_value = entry_value.replace(',', '') #Remove up to 9 commas
+
 
         causes_line = state
         
         for index in range(0, num_causes):
   
             #find cause of death label
-            placeholder_string = skip_line(placeholder_string) #skip another line
+##            placeholder_string = skip_line(placeholder_string) #skip another line
             entry_name = isolate_line(placeholder_string) #isolate it
 
             pattern = re.compile("\D+(?= )")
@@ -287,7 +286,7 @@ def other_causes(_row_array, filename, delimiter, num_causes):
             if search == None:
                 print("Name not found..")
             else:
-                entry_name = search.group()
+                entry_name = search.group() #Apply regular expression
                 entry_name = entry_name[1:] # remove prefix space
 
             if pop > 0:
@@ -295,25 +294,22 @@ def other_causes(_row_array, filename, delimiter, num_causes):
             else:
                 entry_value_per_capita = -1
 
+            #find cause of death value
+            placeholder_string = skip_line(placeholder_string) #skip another line
+            entry_value = placeholder_string[:placeholder_string.find(' ')]
+            for i in range(0,10): entry_value = entry_value.replace(',', '') #Remove up to 9 commas
+
+            placeholder_string = skip_line(placeholder_string) #skip another line
+
             #Add to table
             causes_line = causes_line + delimiter + entry_name + delimiter + entry_value \
                                   + delimiter + str(entry_value_per_capita)
-       
-
-            #fine next cause of death value
-            placeholder_string = skip_line(placeholder_string) #skip another line
-            entry_value = placeholder_string[:placeholder_string.find(' ')]
-            for i in range(0,10): entry_value = entry_value.replace(',', '')
+            
             
         causes_table.append(causes_line + '\r')
         count += 1
 
-        
-##        print(state, entry_name, entry_string)
-            
-##    print(causes_table)
     writeblock("us_cause_of_death_2015", causes_table, '.csv')
-
     
 
 other_causes(row_array, other_death_causes_filename, ',', 5) #function only works for up to 5 cases

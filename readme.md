@@ -12,7 +12,7 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 ### Features:
 - Converts US county data to state data
 - Converts province data to country data 
-- Converts totals to rates
+- Converts totals to rates (to prevent this, change CONVERT_TO_RATE to False at the beginning of each script)
 - Transposes dates so each row has a date, country, and case/death data both absolute and per capita
 - Creates `us_cause_of_death_2015_t.csv` from CDC 2015 pdf data listing the top 5 causes of death per state absolute and per capita
 - Adds lockdown and contact tracing data to world output files (must be manually updated from `https://ourworldindata.org/grapher/covid-contact-tracing`)
@@ -45,6 +45,10 @@ or for running all of them:
 
 `sanitize_data.bat`
 
+or for downloading and running all of them (wget required):
+
+`new_day.bat`
+
 5. Files saved with their original filenames with '_t' suffix
 
 ### FAQ:
@@ -71,9 +75,10 @@ Q. Why does it say "Sweden's last value x of y?"
 A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
 
 ### Major Bugs
-9/11/2020: None known
+9/14/2020: None known
 
 ### Fixed Bugs
+9/14/2020: Fixed major bug where the all leading causes of death value was replacing the leading cause of death
 9/11/2020:
 - Per capita for confirmed cases in US doesn't have population column so it shows -1, probably causes some slight date data corruption as well
 - Congo Brazzaville sanitized to "Congo", Congo Kinshasa sanitized to "Democratic Republic of Congo" to be consistent with contact tracing csv
@@ -90,6 +95,8 @@ A full list of territories with population data that isn't cross-referenced corr
 Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
 
 ### Potential Enhancements
+Add saving rates and totals to each case/death output file 
+
 Add scripts for county (not count**r**y) rate conversion / transposing
 
 Add arguments for different data transformation options

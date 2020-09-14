@@ -20,7 +20,7 @@ try:
 except:
     filename = "time_series_covid19_confirmed_US"
 
-CONVERT_TO_RATE = True #This is no longer current
+CONVERT_TO_RATE = True #Versus Totals
 ONE_WAVE_HERD = True
 contact_tracing_filename = "covid-contact-tracing.csv"
 other_death_causes_filename = 'LCWK9_2015'
