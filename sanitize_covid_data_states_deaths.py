@@ -20,7 +20,7 @@ try:
 except:
     filename = "time_series_covid19_deaths_US"
 
-CONVERT_TO_RATE = False #Versus totals
+CONVERT_TO_RATE = True #Versus totals
 ONE_WAVE_HERD = True
 contact_tracing_filename = "covid-contact-tracing.csv"
 other_death_causes_filename = 'LCWK9_2015'
@@ -289,15 +289,18 @@ def other_causes(_row_array, filename, delimiter, num_causes):
                 entry_name = search.group() #Apply regular expression
                 entry_name = entry_name[1:] # remove prefix space
 
-            if pop > 0:
-                entry_value_per_capita = float(float(float(entry_value) / pop) * 100)
-            else:
-                entry_value_per_capita = -1
+
 
             #find cause of death value
             placeholder_string = skip_line(placeholder_string) #skip another line
             entry_value = placeholder_string[:placeholder_string.find(' ')]
             for i in range(0,10): entry_value = entry_value.replace(',', '') #Remove up to 9 commas
+
+            #per capita
+            if pop > 0:
+                entry_value_per_capita = float(float(float(entry_value) / pop) * 100)
+            else:
+                entry_value_per_capita = -1
 
             placeholder_string = skip_line(placeholder_string) #skip another line
 
