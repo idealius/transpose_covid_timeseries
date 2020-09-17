@@ -8,7 +8,7 @@ try:
 except:
     filename = "time_series_covid19_confirmed_global"
 
-CONVERT_TO_RATE = False #Versus totals
+CONVERT_TO_RATE = True #Versus totals
 ONE_WAVE_HERD = True #per capita related
 population_filename = "population_and_lockdown_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
