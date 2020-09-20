@@ -12,7 +12,7 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 ### Features:
 - Converts US county data to state data
 - Converts province data to country data 
-- Converts totals to rates (to prevent this, change CONVERT_TO_RATE to False at the beginning of each script)
+- Versions of scripts to run totals or rates of deaths/cases (9/19/20 update)
 - Transposes dates so each row has a date, country, and case/death data both absolute and per capita
 - Creates `us_cause_of_death_2015_t.csv` from CDC 2015 pdf data listing the top 5 causes of death per state absolute and per capita
 - Adds lockdown and contact tracing data to world output files (must be manually updated from `https://ourworldindata.org/grapher/covid-contact-tracing`)
@@ -47,9 +47,17 @@ or for running all of them:
 
 or for downloading and running all of them (wget required):
 
-`new_day.bat`
+`new_day_rate.bat`
 
-5. Files saved with their original filenames with '_t' suffix
+`new_day_total.bat`
+
+or
+
+
+`new_day_both.bat`
+
+
+5. Files saved with their original filenames with 'total' or 'rate' suffix
 
 ### FAQ:
 Q. What do the different levels of Contract Tracing mean? (-1,0,1,2)
@@ -68,7 +76,7 @@ Source: (https://ourworldindata.org/grapher/covid-contact-tracing)
 
 Q. Why are certain regions printed out during runtime and not others?
 
-A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for world data and hard-coded at .057% for state data comparison.
+A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for world data and hard-coded at .057% for state data comparison. The usefulness of this is questionable for the rate scripts (vs the totals.)
 
 Q. Why does it say "Sweden's last value x of y?"
 
@@ -95,7 +103,7 @@ A full list of territories with population data that isn't cross-referenced corr
 Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
 
 ### Potential Enhancements
-Add saving rates and totals to each case/death output file 
+Add saving rates and totals to each case/death output file (9/19/20 I decided to just duplicate the scripts because it seemed more timely)
 
 Add scripts for county (not count**r**y) rate conversion / transposing
 
