@@ -1,15 +1,20 @@
 import csv
 import sys
+
 from enum import Enum
 from datetime import *
 
 try:
     filename = sys.argv[1]
 except:
-    filename = "time_series_covid19_confirmed_global"
+    filename = "time_series_covid19_deaths_global"
 
-CONVERT_TO_RATE = True #Versus totals
-ONE_WAVE_HERD = True #per capita related
+CONVERT_TO_RATE = True #versus totals
+ONE_WAVE_HERD = True #this is per capita calculation related
+if CONVERT_TO_RATE == True:
+    suffix = "_rate"
+else:
+    suffix = "_total"
 population_filename = "population_and_lockdown_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
 sweden_population = int(0)
@@ -26,6 +31,11 @@ def getstuff(filename, criterion):
 ##                print('^'+row[0])
                 yield row[0]
         return
+
+def writeblock(filename, data, suffix, extension):
+    csvfile_w = open(filename+suffix + extension, "w")
+    csvfile_w.writelines(data)
+    csvfile_w.close()
 
 def writestuff(file, data):
     datawriter = csv.writer(file)
@@ -105,7 +115,6 @@ def sanitize_countryname(string):
 ]
     
     count = 0
-    original_string = string
     for item in culprits:
         string = string.replace(item, replacements[count])
         count += 1
@@ -122,14 +131,10 @@ def sanitize_contacttracing_countryname(string):
                             "Bosnia",
                              "US"
 ]
- 
     
     count = 0
-    original_string = string
-
     for item in culprits:
         string = string.replace(item, replacements[count])
-        if original_string != string: return string
         count += 1
 
     return string
@@ -199,7 +204,6 @@ for row in getstuff(filename, throwaway):
                 sub_count -= 2
                 break # No country??
 
-                
             if parse_str == value:
                 addition = True
                 print(parse_str + ':' + "Adding region...")               
@@ -253,7 +257,7 @@ def convert_to_rates(_row_array):
                 pass
                 
             sub_count += 1 #sub_count starts at 1
-           
+          
             if sub_count > 4:
     ##            print("Subracting")
                 return_value = parseop(_proc_row_array[count], ',', sub_count, _value-prev_value, parse.REPLACE)
@@ -291,18 +295,18 @@ def compose_row(_row, _header_row, index, delimiter):
 
 
     
-    cases = float(parseop(_row, delimiter, index+3, 0, parse.RETRIEVE))
-    cases_per_capita = 0
+    deaths = float(parseop(_row, delimiter, index+3, 0, parse.RETRIEVE))
+    deaths_per_capita = 0
     lockdown = "0"
 
-##    cases = cases.replace('\r', '')
+##    deaths = deaths.replace('\r', '')
     if ONE_WAVE_HERD == True:
         for row in range(0,len(population_table)):
 ##            print(population_table[row][0], country)
             if population_table[row][0] == country:
-##                cases =  float(float(cases / float(population_table[row][1]) / one_wave_herd))
-                cases_per_capita =  float(float(cases / float(population_table[row][1]))*100)
-                if cases_per_capita > one_wave_herd: print(country, cases_per_capita) #Sweden's rate
+##                deaths =  float(float(deaths / float(population_table[row][1]) / one_wave_herd))
+                deaths_per_capita =  float(float(deaths / float(population_table[row][1]))*100)
+                if deaths_per_capita > one_wave_herd: print(country, deaths_per_capita) #Sweden's rate
                 lock_startday = population_table[row][2]
                 lock_endday = population_table[row][3]
                 if lock_startday != "":
@@ -314,10 +318,10 @@ def compose_row(_row, _header_row, index, delimiter):
                             if startday_object <= day_object:
                                 lockdown = "1"
 ##                                print(lock_startday, day)
-##                print("Converting cases for " + country)
+##                print("Converting deaths for " + country)
     
     string = country + delimiter + lat + delimiter + lon + delimiter + str(day) + delimiter +\
-    str(cases) +delimiter + str(cases_per_capita) + delimiter + str(lockdown)
+    str(deaths) +delimiter + str(deaths_per_capita) + delimiter + str(lockdown)
     return string
 
 
@@ -330,7 +334,7 @@ def transpose(_proc_row_array, _days):
     country = parseop(_proc_row_array[0], ',', 1, 0, parse.RETRIEVE)
     lat = parseop(_proc_row_array[0], ',', 2, 0, parse.RETRIEVE)
     lon = parseop(_proc_row_array[0], ',', 3, 0, parse.RETRIEVE)
-    _row_array[0] = country + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Cases' +',' + 'Cases (Per Capita)' + ',' + 'Lockdown' + '\r'
+    _row_array[0] = country + ',' + lat + ',' + lon + ',' + "Date" + ',' + 'Reported Deaths' +',' + 'Deaths (Per Capita)' + ',' + 'Lockdown' + '\r'
 
     #Transpose the rest:
     for c in range(1, countries+1):
@@ -444,10 +448,10 @@ def add_contact_tracing(_row_array, delimiter):
 add_contact_tracing(row_array, ',')
 
 
-csvfile_w = open(filename+'_t.csv', "w")
-csvfile_w.writelines(row_array)
-csvfile_w.close()
+writeblock(filename, row_array, suffix, '.csv')
 
-print('\n' + "Done, filename has _t suffix.")
+print('\n' + "Done, filename has " + suffix + " suffix.")
+
+
 
 

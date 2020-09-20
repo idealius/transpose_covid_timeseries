@@ -22,6 +22,10 @@ except:
 
 CONVERT_TO_RATE = True #Versus totals
 ONE_WAVE_HERD = True
+if CONVERT_TO_RATE == True:
+    suffix = "_rate"
+else:
+    suffix = "_total"
 contact_tracing_filename = "covid-contact-tracing.csv"
 other_death_causes_filename = 'LCWK9_2015'
 sweden_population = int(0)
@@ -43,8 +47,8 @@ def getstuff(filename, criterion):
                 yield row[0]
         return
 
-def writeblock(filename, data, extension):
-    csvfile_w = open(filename+'_t' + extension, "w")
+def writeblock(filename, data, suffix, extension):
+    csvfile_w = open(filename+suffix + extension, "w")
     csvfile_w.writelines(data)
     csvfile_w.close()
 
@@ -243,7 +247,7 @@ def other_causes(_row_array, filename, delimiter, num_causes):
             interpreter.process_page(page)
 
     text = str(output_string.getvalue())
-    writeblock(filename, text, '.txt')
+    writeblock(filename, text, '', '.txt')
 
     skip_line = lambda str : -1 if str.find('\n') == -1 else str[str.find('\n')+1:]
     isolate_line = lambda str: -1 if str.find('\n') == -1 else str[:str.find('\n')]
@@ -312,7 +316,7 @@ def other_causes(_row_array, filename, delimiter, num_causes):
         causes_table.append(causes_line + '\r')
         count += 1
 
-    writeblock("us_cause_of_death_2015", causes_table, '.csv')
+    writeblock("us_cause_of_death_2015", causes_table,'', '.csv')
     
 
 other_causes(row_array, other_death_causes_filename, ',', 5) #function only works for up to 5 cases
@@ -374,8 +378,9 @@ row_array = transpose(row_array, days)
 ##print(row_array)
 
 
-writeblock(filename, row_array, '.csv')
 
-print('\n' + "Done, filename has _t suffix.")
+writeblock(filename, row_array, suffix, '.csv')
+
+print('\n' + "Done, filename has " + suffix + " suffix.")
 
 

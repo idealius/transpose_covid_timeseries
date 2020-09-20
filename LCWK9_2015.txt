@@ -1,0 +1,2524 @@
+9/29/2017
+
+Page 1
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+United States
+
+... All causes
+2,712,630 100.0 844.0
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+633,842 23.4 197.2
+2 Malignant neoplasms (C00-C97)
+595,930 22.0 185.4
+3 Chronic lower respiratory diseases (J40-J47)
+155,041 5.7 48.2
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+146,571 5.4 45.6
+5 Cerebrovascular diseases (I60-I69)
+140,323 5.2 43.7
+6 Alzheimer's disease (G30)
+110,561 4.1 34.4
+7 Diabetes mellitus (E10-E14)
+79,535 2.9 24.7
+8 Influenza and pneumonia (J09-J18)
+57,062 2.1 17.8
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 49,959 1.8 15.5
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+44,193 1.6 13.7
+11 Septicemia (A40-A41)
+40,773 1.5 12.7
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+40,326 1.5 12.5
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+32,200 1.2 10.0
+14 Parkinson's disease (G20-G21)
+27,972 1.0 8.7
+15 Pneumonitis due to solids and liquids (J69)
+19,803 0.7 6.2
+... All other causes (residual)
+538,539 19.9 167.6
+
+ Alabama
+
+... All causes
+51,909 100.0 1,068.3
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+12,981 25.0 267.2
+2 Malignant neoplasms (C00-C97)
+10,354 19.9 213.1
+3 Chronic lower respiratory diseases (J40-J47)
+3,279 6.3 67.5
+4 Cerebrovascular diseases (I60-I69)
+2,937 5.7 60.4
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,552 4.9 52.5
+6 Alzheimer's disease (G30)
+2,282 4.4 47.0
+7 Diabetes mellitus (E10-E14)
+1,255 2.4 25.8
+8 Influenza and pneumonia (J09-J18)
+1,097 2.1 22.6
+9 Septicemia (A40-A41)
+1,046 2.0 21.5
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,040 2.0 21.4
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+750 1.4 15.4
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+716 1.4 14.7
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+519 1.0 10.7
+14 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+473 0.9 9.7
+15 Parkinson's disease (G20-G21)
+461 0.9 9.5
+... All other causes (residual)
+10,167 19.6 209.2
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 2
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Alaska
+
+... All causes
+4,316 100.0 584.5
+1 Malignant neoplasms (C00-C97)
+978 22.7 132.4
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+846 19.6 114.6
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+388 9.0 52.5
+4 Chronic lower respiratory diseases (J40-J47)
+204 4.7 27.6
+5 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+201 4.7 27.2
+6 Cerebrovascular diseases (I60-I69)
+182 4.2 24.6
+7 Diabetes mellitus (E10-E14)
+142 3.3 19.2
+8 Chronic liver disease and cirrhosis (K70,K73-K74)
+114 2.6 15.4
+9 Alzheimer's disease (G30)
+68 1.6 9.2
+10 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+62 1.4 8.4
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 50 1.2 6.8
+12 Influenza and pneumonia (J09-J18)
+41 0.9 5.6
+13 Parkinson's disease (G20-G21)
+38 0.9 5.1
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+38 0.9 5.1
+15 Septicemia (A40-A41)
+37 0.9 5.0
+... All other causes (residual)
+927 21.5 125.5
+
+ Arizona
+
+... All causes
+54,299 100.0 795.2
+1 Malignant neoplasms (C00-C97)
+11,776 21.7 172.5
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+11,458 21.1 167.8
+3 Chronic lower respiratory diseases (J40-J47)
+3,681 6.8 53.9
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,539 6.5 51.8
+5 Alzheimer's disease (G30)
+2,943 5.4 43.1
+6 Cerebrovascular diseases (I60-I69)
+2,522 4.6 36.9
+7 Diabetes mellitus (E10-E14)
+2,081 3.8 30.5
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,276 2.3 18.7
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,149 2.1 16.8
+10 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+963 1.8 14.1
+11 Influenza and pneumonia (J09-J18)
+775 1.4 11.4
+12 Parkinson's disease (G20-G21)
+720 1.3 10.5
+13 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 458 0.8 6.7
+14 Septicemia (A40-A41)
+444 0.8 6.5
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+364 0.7 5.3
+... All other causes (residual)
+10,150 18.7 148.7
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 3
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Arkansas
+
+... All causes
+31,617 100.0 1,061.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+7,938 25.1 266.5
+2 Malignant neoplasms (C00-C97)
+6,727 21.3 225.9
+3 Chronic lower respiratory diseases (J40-J47)
+2,270 7.2 76.2
+4 Cerebrovascular diseases (I60-I69)
+1,653 5.2 55.5
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,538 4.9 51.6
+6 Alzheimer's disease (G30)
+1,457 4.6 48.9
+7 Diabetes mellitus (E10-E14)
+886 2.8 29.7
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 707 2.2 23.7
+9 Influenza and pneumonia (J09-J18)
+700 2.2 23.5
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+577 1.8 19.4
+11 Septicemia (A40-A41)
+525 1.7 17.6
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+421 1.3 14.1
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+329 1.0 11.0
+14 Parkinson's disease (G20-G21)
+248 0.8 8.3
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+217 0.7 7.3
+... All other causes (residual)
+5,424 17.2 182.1
+
+ California
+
+... All causes
+259,206 100.0 662.2
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+61,289 23.6 156.6
+2 Malignant neoplasms (C00-C97)
+59,629 23.0 152.3
+3 Alzheimer's disease (G30)
+15,065 5.8 38.5
+3 Cerebrovascular diseases (I60-I69)
+15,065 5.8 38.5
+5 Chronic lower respiratory diseases (J40-J47)
+13,621 5.3 34.8
+6 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+12,544 4.8 32.0
+7 Diabetes mellitus (E10-E14)
+8,845 3.4 22.6
+8 Influenza and pneumonia (J09-J18)
+6,188 2.4 15.8
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+5,425 2.1 13.9
+10 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+5,118 2.0 13.1
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+4,167 1.6 10.6
+12 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 3,557 1.4 9.1
+13 Parkinson's disease (G20-G21)
+2,896 1.1 7.4
+14 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+1,987 0.8 5.1
+15 Pneumonitis due to solids and liquids (J69)
+1,752 0.7 4.5
+... All other causes (residual)
+42,058 16.2 107.4
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 4
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Colorado
+
+... All causes
+36,349 100.0 666.2
+1 Malignant neoplasms (C00-C97)
+7,604 20.9 139.4
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+7,009 19.3 128.5
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,725 7.5 49.9
+4 Chronic lower respiratory diseases (J40-J47)
+2,577 7.1 47.2
+5 Cerebrovascular diseases (I60-I69)
+1,856 5.1 34.0
+6 Alzheimer's disease (G30)
+1,612 4.4 29.5
+7 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,093 3.0 20.0
+8 Diabetes mellitus (E10-E14)
+887 2.4 16.3
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+735 2.0 13.5
+10 Influenza and pneumonia (J09-J18)
+659 1.8 12.1
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 458 1.3 8.4
+12 Septicemia (A40-A41)
+456 1.3 8.4
+13 Parkinson's disease (G20-G21)
+452 1.2 8.3
+14 Pneumonitis due to solids and liquids (J69)
+346 1.0 6.3
+15 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+273 0.8 5.0
+... All other causes (residual)
+7,607 20.9 139.4
+
+ Connecticut
+
+... All causes
+30,535 100.0 850.3
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+7,205 23.6 200.6
+2 Malignant neoplasms (C00-C97)
+6,666 21.8 185.6
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,799 5.9 50.1
+4 Cerebrovascular diseases (I60-I69)
+1,388 4.5 38.7
+5 Chronic lower respiratory diseases (J40-J47)
+1,369 4.5 38.1
+6 Alzheimer's disease (G30)
+966 3.2 26.9
+7 Influenza and pneumonia (J09-J18)
+667 2.2 18.6
+8 Diabetes mellitus (E10-E14)
+653 2.1 18.2
+9 Septicemia (A40-A41)
+646 2.1 18.0
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 584 1.9 16.3
+11 Pneumonitis due to solids and liquids (J69)
+386 1.3 10.7
+12 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+384 1.3 10.7
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+365 1.2 10.2
+14 Parkinson's disease (G20-G21)
+334 1.1 9.3
+15 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+317 1.0 8.8
+... All other causes (residual)
+6,806 22.3 189.5
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 5
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Delaware
+
+... All causes
+8,582 100.0 907.3
+1 Malignant neoplasms (C00-C97)
+2,010 23.4 212.5
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+1,940 22.6 205.1
+3 Chronic lower respiratory diseases (J40-J47)
+510 5.9 53.9
+4 Cerebrovascular diseases (I60-I69)
+466 5.4 49.3
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+449 5.2 47.5
+6 Alzheimer's disease (G30)
+264 3.1 27.9
+7 Diabetes mellitus (E10-E14)
+215 2.5 22.7
+8 Influenza and pneumonia (J09-J18)
+189 2.2 20.0
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 174 2.0 18.4
+10 Septicemia (A40-A41)
+145 1.7 15.3
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+122 1.4 12.9
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+111 1.3 11.7
+13 Parkinson's disease (G20-G21)
+84 1.0 8.9
+14 Pneumonitis due to solids and liquids (J69)
+73 0.9 7.7
+15 Certain conditions originating in the perinatal period (P00-P96)
+67 0.8 7.1
+... All other causes (residual)
+1,763 20.5 186.4
+
+ District of Columbia
+
+... All causes
+4,871 100.0 724.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+1,217 25.0 181.0
+2 Malignant neoplasms (C00-C97)
+1,072 22.0 159.5
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+265 5.4 39.4
+4 Cerebrovascular diseases (I60-I69)
+242 5.0 36.0
+5 Diabetes mellitus (E10-E14)
+162 3.3 24.1
+6 Chronic lower respiratory diseases (J40-J47)
+147 3.0 21.9
+7 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+136 2.8 20.2
+8 Alzheimer's disease (G30)
+129 2.6 19.2
+9 Influenza and pneumonia (J09-J18)
+104 2.1 15.5
+10 Septicemia (A40-A41)
+88 1.8 13.1
+11 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+87 1.8 12.9
+12 Human immunodeficiency virus (HIV) disease (B20-B24)
+70 1.4 10.4
+13 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 65 1.3 9.7
+14 Chronic liver disease and cirrhosis (K70,K73-K74)
+61 1.3 9.1
+15 Certain conditions originating in the perinatal period (P00-P96)
+46 0.9 6.8
+... All other causes (residual)
+980 20.1 145.8
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 6
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Florida
+
+... All causes
+191,737 100.0 945.9
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+45,441 23.7 224.2
+2 Malignant neoplasms (C00-C97)
+44,027 23.0 217.2
+3 Chronic lower respiratory diseases (J40-J47)
+11,705 6.1 57.7
+4 Cerebrovascular diseases (I60-I69)
+11,433 6.0 56.4
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+10,578 5.5 52.2
+6 Alzheimer's disease (G30)
+7,031 3.7 34.7
+7 Diabetes mellitus (E10-E14)
+5,403 2.8 26.7
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+3,205 1.7 15.8
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 3,203 1.7 15.8
+10 Chronic liver disease and cirrhosis (K70,K73-K74)
+3,084 1.6 15.2
+11 Influenza and pneumonia (J09-J18)
+2,676 1.4 13.2
+12 Septicemia (A40-A41)
+2,368 1.2 11.7
+13 Parkinson's disease (G20-G21)
+2,228 1.2 11.0
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+2,187 1.1 10.8
+15 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+... All other causes (residual)
+
+1,479 0.8 7.3
+35,689 18.6 176.1
+
+ Georgia
+
+... All causes
+79,942 100.0 782.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+17,769 22.2 174.0
+2 Malignant neoplasms (C00-C97)
+16,945 21.2 165.9
+3 Chronic lower respiratory diseases (J40-J47)
+4,607 5.8 45.1
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+4,344 5.4 42.5
+5 Cerebrovascular diseases (I60-I69)
+4,335 5.4 42.4
+6 Alzheimer's disease (G30)
+3,714 4.6 36.4
+7 Diabetes mellitus (E10-E14)
+2,210 2.8 21.6
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,881 2.4 18.4
+9 Septicemia (A40-A41)
+1,526 1.9 14.9
+10 Influenza and pneumonia (J09-J18)
+1,467 1.8 14.4
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,317 1.6 12.9
+12 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+1,076 1.3 10.5
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,003 1.3 9.8
+14 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+738 0.9 7.2
+15 Parkinson's disease (G20-G21)
+733 0.9 7.2
+... All other causes (residual)
+16,277 20.4 159.3
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 7
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Hawaii
+
+... All causes
+11,053 100.0 772.1
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+2,605 23.6 182.0
+2 Malignant neoplasms (C00-C97)
+2,462 22.3 172.0
+3 Cerebrovascular diseases (I60-I69)
+735 6.6 51.3
+4 Influenza and pneumonia (J09-J18)
+557 5.0 38.9
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+536 4.8 37.4
+6 Alzheimer's disease (G30)
+422 3.8 29.5
+7 Chronic lower respiratory diseases (J40-J47)
+332 3.0 23.2
+8 Diabetes mellitus (E10-E14)
+263 2.4 18.4
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 202 1.8 14.1
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+201 1.8 14.0
+11 Parkinson's disease (G20-G21)
+141 1.3 9.8
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+138 1.2 9.6
+13 Septicemia (A40-A41)
+123 1.1 8.6
+14 Pneumonitis due to solids and liquids (J69)
+108 1.0 7.5
+15 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+86 0.8 6.0
+... All other causes (residual)
+2,142 19.4 149.6
+
+ Idaho
+
+... All causes
+13,026 100.0 787.1
+1 Malignant neoplasms (C00-C97)
+2,849 21.9 172.2
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+2,825 21.7 170.7
+3 Chronic lower respiratory diseases (J40-J47)
+843 6.5 50.9
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+746 5.7 45.1
+5 Cerebrovascular diseases (I60-I69)
+641 4.9 38.7
+6 Alzheimer's disease (G30)
+552 4.2 33.4
+7 Diabetes mellitus (E10-E14)
+403 3.1 24.4
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+359 2.8 21.7
+9 Influenza and pneumonia (J09-J18)
+218 1.7 13.2
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+218 1.7 13.2
+11 Parkinson's disease (G20-G21)
+169 1.3 10.2
+12 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 154 1.2 9.3
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+101 0.8 6.1
+14 Pneumonitis due to solids and liquids (J69)
+100 0.8 6.0
+15 Septicemia (A40-A41)
+84 0.6 5.1
+... All other causes (residual)
+2,764 21.2 167.0
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 8
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Illinois
+
+... All causes
+106,872 100.0 831.0
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+25,652 24.0 199.5
+2 Malignant neoplasms (C00-C97)
+24,713 23.1 192.2
+3 Cerebrovascular diseases (I60-I69)
+5,709 5.3 44.4
+4 Chronic lower respiratory diseases (J40-J47)
+5,544 5.2 43.1
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+4,850 4.5 37.7
+6 Alzheimer's disease (G30)
+3,686 3.4 28.7
+7 Diabetes mellitus (E10-E14)
+2,817 2.6 21.9
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 2,543 2.4 19.8
+9 Influenza and pneumonia (J09-J18)
+2,343 2.2 18.2
+10 Septicemia (A40-A41)
+1,819 1.7 14.1
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,363 1.3 10.6
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,289 1.2 10.0
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+1,137 1.1 8.8
+14 Parkinson's disease (G20-G21)
+1,079 1.0 8.4
+15 Pneumonitis due to solids and liquids (J69)
+960 0.9 7.5
+... All other causes (residual)
+21,368 20.0 166.2
+
+ Indiana
+
+... All causes
+62,713 100.0 947.4
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+13,948 22.2 210.7
+2 Malignant neoplasms (C00-C97)
+13,511 21.5 204.1
+3 Chronic lower respiratory diseases (J40-J47)
+4,212 6.7 63.6
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,258 5.2 49.2
+5 Cerebrovascular diseases (I60-I69)
+2,959 4.7 44.7
+6 Alzheimer's disease (G30)
+2,513 4.0 38.0
+7 Diabetes mellitus (E10-E14)
+2,030 3.2 30.7
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,450 2.3 21.9
+9 Septicemia (A40-A41)
+1,139 1.8 17.2
+10 Influenza and pneumonia (J09-J18)
+1,044 1.7 15.8
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+960 1.5 14.5
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+859 1.4 13.0
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+694 1.1 10.5
+14 Parkinson's disease (G20-G21)
+638 1.0 9.6
+15 Pneumonitis due to solids and liquids (J69)
+465 0.7 7.0
+... All other causes (residual)
+13,033 20.8 196.9
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 9
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Iowa
+
+... All causes
+29,600 100.0 947.5
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+6,813 23.0 218.1
+2 Malignant neoplasms (C00-C97)
+6,513 22.0 208.5
+3 Chronic lower respiratory diseases (J40-J47)
+2,011 6.8 64.4
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,537 5.2 49.2
+5 Cerebrovascular diseases (I60-I69)
+1,418 4.8 45.4
+6 Alzheimer's disease (G30)
+1,339 4.5 42.9
+7 Diabetes mellitus (E10-E14)
+1,077 3.6 34.5
+8 Influenza and pneumonia (J09-J18)
+618 2.1 19.8
+9 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+433 1.5 13.9
+10 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+390 1.3 12.5
+11 Parkinson's disease (G20-G21)
+341 1.2 10.9
+12 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 336 1.1 10.8
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+328 1.1 10.5
+14 Septicemia (A40-A41)
+252 0.9 8.1
+15 Pneumonitis due to solids and liquids (J69)
+222 0.8 7.1
+... All other causes (residual)
+5,972 20.2 191.2
+
+ Kansas
+
+... All causes
+26,664 100.0 915.8
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+5,624 21.1 193.2
+2 Malignant neoplasms (C00-C97)
+5,604 21.0 192.5
+3 Chronic lower respiratory diseases (J40-J47)
+1,704 6.4 58.5
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,475 5.5 50.7
+5 Cerebrovascular diseases (I60-I69)
+1,364 5.1 46.8
+6 Alzheimer's disease (G30)
+865 3.2 29.7
+7 Diabetes mellitus (E10-E14)
+684 2.6 23.5
+8 Influenza and pneumonia (J09-J18)
+682 2.6 23.4
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 582 2.2 20.0
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+477 1.8 16.4
+11 Atherosclerosis (I70)
+451 1.7 15.5
+12 Septicemia (A40-A41)
+381 1.4 13.1
+13 Parkinson's disease (G20-G21)
+326 1.2 11.2
+14 Chronic liver disease and cirrhosis (K70,K73-K74)
+313 1.2 10.7
+15 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+245 0.9 8.4
+... All other causes (residual)
+5,887 22.1 202.2
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 10
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Kentucky
+
+... All causes
+46,564 100.0 1,052.3
+1 Malignant neoplasms (C00-C97)
+10,312 22.1 233.0
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+10,077 21.6 227.7
+3 Chronic lower respiratory diseases (J40-J47)
+3,331 7.2 75.3
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,962 6.4 66.9
+5 Cerebrovascular diseases (I60-I69)
+2,050 4.4 46.3
+6 Alzheimer's disease (G30)
+1,694 3.6 38.3
+7 Diabetes mellitus (E10-E14)
+1,458 3.1 32.9
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 998 2.1 22.6
+9 Influenza and pneumonia (J09-J18)
+967 2.1 21.9
+10 Septicemia (A40-A41)
+873 1.9 19.7
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+776 1.7 17.5
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+657 1.4 14.8
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+441 0.9 10.0
+14 Parkinson's disease (G20-G21)
+395 0.8 8.9
+15 Pneumonitis due to solids and liquids (J69)
+329 0.7 7.4
+... All other causes (residual)
+9,244 19.9 208.9
+
+ Louisiana
+
+... All causes
+43,716 100.0 936.0
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+10,665 24.4 228.3
+2 Malignant neoplasms (C00-C97)
+9,397 21.5 201.2
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,578 5.9 55.2
+4 Cerebrovascular diseases (I60-I69)
+2,280 5.2 48.8
+5 Chronic lower respiratory diseases (J40-J47)
+2,178 5.0 46.6
+6 Alzheimer's disease (G30)
+2,018 4.6 43.2
+7 Diabetes mellitus (E10-E14)
+1,199 2.7 25.7
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,160 2.7 24.8
+9 Septicemia (A40-A41)
+991 2.3 21.2
+10 Influenza and pneumonia (J09-J18)
+753 1.7 16.1
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+722 1.7 15.5
+12 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+569 1.3 12.2
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+553 1.3 11.8
+14 Parkinson's disease (G20-G21)
+371 0.8 7.9
+15 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+369 0.8 7.9
+... All other causes (residual)
+7,913 18.1 169.4
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 11
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Maine
+
+... All causes
+14,479 100.0 1,089.2
+1 Malignant neoplasms (C00-C97)
+3,398 23.5 255.6
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+3,009 20.8 226.4
+3 Chronic lower respiratory diseases (J40-J47)
+1,025 7.1 77.1
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+802 5.5 60.3
+5 Cerebrovascular diseases (I60-I69)
+616 4.3 46.3
+6 Alzheimer's disease (G30)
+544 3.8 40.9
+7 Diabetes mellitus (E10-E14)
+407 2.8 30.6
+8 Influenza and pneumonia (J09-J18)
+333 2.3 25.1
+9 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+235 1.6 17.7
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 211 1.5 15.9
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+195 1.3 14.7
+12 Parkinson's disease (G20-G21)
+147 1.0 11.1
+13 Septicemia (A40-A41)
+145 1.0 10.9
+14 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+15 Pneumonitis due to solids and liquids (J69)
+... All other causes (residual)
+
+ Maryland
+
+105 0.7 7.9
+102 0.7 7.7
+3,205 22.1 241.1
+
+... All causes
+47,247 100.0 786.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+11,481 24.3 191.1
+2 Malignant neoplasms (C00-C97)
+10,568 22.4 175.9
+3 Cerebrovascular diseases (I60-I69)
+2,540 5.4 42.3
+4 Chronic lower respiratory diseases (J40-J47)
+2,040 4.3 34.0
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,903 4.0 31.7
+6 Diabetes mellitus (E10-E14)
+1,243 2.6 20.7
+7 Influenza and pneumonia (J09-J18)
+1,176 2.5 19.6
+8 Alzheimer's disease (G30)
+1,095 2.3 18.2
+9 Septicemia (A40-A41)
+913 1.9 15.2
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 834 1.8 13.9
+11 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+596 1.3 9.9
+12 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+553 1.2 9.2
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+521 1.1 8.7
+14 Chronic liver disease and cirrhosis (K70,K73-K74)
+471 1.0 7.8
+15 Parkinson's disease (G20-G21)
+461 1.0 7.7
+... All other causes (residual)
+10,852 23.0 180.7
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 12
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Massachusetts
+
+... All causes
+57,806 100.0 850.8
+1 Malignant neoplasms (C00-C97)
+12,750 22.1 187.7
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+12,130 21.0 178.5
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,229 5.6 47.5
+4 Chronic lower respiratory diseases (J40-J47)
+2,784 4.8 41.0
+5 Cerebrovascular diseases (I60-I69)
+2,475 4.3 36.4
+6 Alzheimer's disease (G30)
+1,815 3.1 26.7
+7 Influenza and pneumonia (J09-J18)
+1,512 2.6 22.3
+8 Diabetes mellitus (E10-E14)
+1,398 2.4 20.6
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,228 2.1 18.1
+10 Septicemia (A40-A41)
+881 1.5 13.0
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+661 1.1 9.7
+12 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+642 1.1 9.4
+13 Parkinson's disease (G20-G21)
+640 1.1 9.4
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+603 1.0 8.9
+15 Pneumonitis due to solids and liquids (J69)
+560 1.0 8.2
+... All other causes (residual)
+14,498 25.1 213.4
+
+ Michigan
+
+... All causes
+95,140 100.0 958.8
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+24,794 26.1 249.9
+2 Malignant neoplasms (C00-C97)
+20,732 21.8 208.9
+3 Chronic lower respiratory diseases (J40-J47)
+5,848 6.1 58.9
+4 Cerebrovascular diseases (I60-I69)
+4,666 4.9 47.0
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+4,647 4.9 46.8
+6 Alzheimer's disease (G30)
+3,771 4.0 38.0
+7 Diabetes mellitus (E10-E14)
+2,751 2.9 27.7
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,921 2.0 19.4
+9 Influenza and pneumonia (J09-J18)
+1,894 2.0 19.1
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,410 1.5 14.2
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,287 1.4 13.0
+12 Septicemia (A40-A41)
+1,268 1.3 12.8
+13 Parkinson's disease (G20-G21)
+960 1.0 9.7
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+922 1.0 9.3
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+597 0.6 6.0
+... All other causes (residual)
+17,672 18.6 178.1
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 13
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Minnesota
+
+... All causes
+42,800 100.0 779.7
+1 Malignant neoplasms (C00-C97)
+9,925 23.2 180.8
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+7,844 18.3 142.9
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,574 6.0 46.9
+4 Chronic lower respiratory diseases (J40-J47)
+2,351 5.5 42.8
+5 Cerebrovascular diseases (I60-I69)
+2,238 5.2 40.8
+6 Alzheimer's disease (G30)
+1,789 4.2 32.6
+7 Diabetes mellitus (E10-E14)
+1,221 2.9 22.2
+8 Influenza and pneumonia (J09-J18)
+738 1.7 13.4
+9 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+730 1.7 13.3
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 639 1.5 11.6
+11 Parkinson's disease (G20-G21)
+620 1.4 11.3
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+542 1.3 9.9
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+518 1.2 9.4
+14 Septicemia (A40-A41)
+439 1.0 8.0
+15 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+... All other causes (residual)
+
+316 0.7 5.8
+10,316 24.1 187.9
+
+ Mississippi
+
+... All causes
+31,783 100.0 1,062.1
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+7,969 25.1 266.3
+2 Malignant neoplasms (C00-C97)
+6,485 20.4 216.7
+3 Chronic lower respiratory diseases (J40-J47)
+1,924 6.1 64.3
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,814 5.7 60.6
+5 Cerebrovascular diseases (I60-I69)
+1,734 5.5 57.9
+6 Alzheimer's disease (G30)
+1,402 4.4 46.9
+7 Diabetes mellitus (E10-E14)
+1,092 3.4 36.5
+8 Influenza and pneumonia (J09-J18)
+791 2.5 26.4
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 731 2.3 24.4
+10 Septicemia (A40-A41)
+676 2.1 22.6
+11 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+508 1.6 17.0
+12 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+431 1.4 14.4
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+382 1.2 12.8
+14 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+325 1.0 10.9
+15 Parkinson's disease (G20-G21)
+247 0.8 8.3
+... All other causes (residual)
+5,272 16.6 176.2
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 14
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Missouri
+
+... All causes
+59,871 100.0 984.1
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+14,808 24.7 243.4
+2 Malignant neoplasms (C00-C97)
+12,965 21.7 213.1
+3 Chronic lower respiratory diseases (J40-J47)
+3,935 6.6 64.7
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,309 5.5 54.4
+5 Cerebrovascular diseases (I60-I69)
+3,037 5.1 49.9
+6 Alzheimer's disease (G30)
+2,173 3.6 35.7
+7 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,483 2.5 24.4
+8 Diabetes mellitus (E10-E14)
+1,468 2.5 24.1
+9 Influenza and pneumonia (J09-J18)
+1,337 2.2 22.0
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,052 1.8 17.3
+11 Septicemia (A40-A41)
+856 1.4 14.1
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+678 1.1 11.1
+13 Parkinson's disease (G20-G21)
+560 0.9 9.2
+14 Pneumonitis due to solids and liquids (J69)
+552 0.9 9.1
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+547 0.9 9.0
+... All other causes (residual)
+11,111 18.6 182.6
+
+ Montana
+
+... All causes
+9,942 100.0 962.5
+1 Malignant neoplasms (C00-C97)
+2,130 21.4 206.2
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+2,104 21.2 203.7
+3 Chronic lower respiratory diseases (J40-J47)
+679 6.8 65.7
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+637 6.4 61.7
+5 Cerebrovascular diseases (I60-I69)
+458 4.6 44.3
+6 Diabetes mellitus (E10-E14)
+321 3.2 31.1
+7 Alzheimer's disease (G30)
+277 2.8 26.8
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+272 2.7 26.3
+9 Influenza and pneumonia (J09-J18)
+183 1.8 17.7
+10 Chronic liver disease and cirrhosis (K70,K73-K74)
+179 1.8 17.3
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 121 1.2 11.7
+12 Parkinson's disease (G20-G21)
+114 1.1 11.0
+13 Septicemia (A40-A41)
+112 1.1 10.8
+14 Pneumonitis due to solids and liquids (J69)
+67 0.7 6.5
+15 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+... All other causes (residual)
+
+66 0.7 6.4
+2,222 22.3 215.1
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 15
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Nebraska
+
+... All causes
+16,740 100.0 882.8
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+3,591 21.5 189.4
+2 Malignant neoplasms (C00-C97)
+3,514 21.0 185.3
+3 Chronic lower respiratory diseases (J40-J47)
+1,174 7.0 61.9
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+799 4.8 42.1
+5 Cerebrovascular diseases (I60-I69)
+776 4.6 40.9
+6 Alzheimer's disease (G30)
+598 3.6 31.5
+7 Diabetes mellitus (E10-E14)
+553 3.3 29.2
+8 Influenza and pneumonia (J09-J18)
+397 2.4 20.9
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 264 1.6 13.9
+10 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+247 1.5 13.0
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+223 1.3 11.8
+12 Parkinson's disease (G20-G21)
+220 1.3 11.6
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+165 1.0 8.7
+14 Septicemia (A40-A41)
+158 0.9 8.3
+15 Pneumonitis due to solids and liquids (J69)
+146 0.9 7.7
+... All other causes (residual)
+3,915 23.4 206.5
+
+ Nevada
+
+... All causes
+22,879 100.0 791.4
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+6,114 26.7 211.5
+2 Malignant neoplasms (C00-C97)
+5,015 21.9 173.5
+3 Chronic lower respiratory diseases (J40-J47)
+1,617 7.1 55.9
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,340 5.9 46.4
+5 Cerebrovascular diseases (I60-I69)
+1,078 4.7 37.3
+6 Alzheimer's disease (G30)
+874 3.8 30.2
+7 Influenza and pneumonia (J09-J18)
+630 2.8 21.8
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+558 2.4 19.3
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+475 2.1 16.4
+10 Diabetes mellitus (E10-E14)
+420 1.8 14.5
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 316 1.4 10.9
+12 Parkinson's disease (G20-G21)
+213 0.9 7.4
+13 Septicemia (A40-A41)
+205 0.9 7.1
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+194 0.8 6.7
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+191 0.8 6.6
+... All other causes (residual)
+3,639 15.9 125.9
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 16
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ New Hampshire
+
+... All causes
+11,984 100.0 900.6
+1 Malignant neoplasms (C00-C97)
+2,773 23.1 208.4
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+2,571 21.5 193.2
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+815 6.8 61.3
+4 Chronic lower respiratory diseases (J40-J47)
+705 5.9 53.0
+5 Cerebrovascular diseases (I60-I69)
+457 3.8 34.3
+6 Alzheimer's disease (G30)
+432 3.6 32.5
+7 Diabetes mellitus (E10-E14)
+308 2.6 23.1
+8 Influenza and pneumonia (J09-J18)
+275 2.3 20.7
+9 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+228 1.9 17.1
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 194 1.6 14.6
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+161 1.3 12.1
+12 Parkinson's disease (G20-G21)
+143 1.2 10.7
+13 Septicemia (A40-A41)
+119 1.0 8.9
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+89 0.7 6.7
+15 Pneumonitis due to solids and liquids (J69)
+75 0.6 5.6
+... All other causes (residual)
+2,639 22.0 198.3
+
+ New Jersey
+
+... All causes
+72,271 100.0 806.8
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+18,647 25.8 208.2
+2 Malignant neoplasms (C00-C97)
+16,270 22.5 181.6
+3 Cerebrovascular diseases (I60-I69)
+3,413 4.7 38.1
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,218 4.5 35.9
+5 Chronic lower respiratory diseases (J40-J47)
+3,202 4.4 35.7
+6 Alzheimer's disease (G30)
+2,260 3.1 25.2
+7 Septicemia (A40-A41)
+1,957 2.7 21.8
+8 Diabetes mellitus (E10-E14)
+1,933 2.7 21.6
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,582 2.2 17.7
+10 Influenza and pneumonia (J09-J18)
+1,402 1.9 15.7
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+789 1.1 8.8
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+782 1.1 8.7
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+733 1.0 8.2
+14 Pneumonitis due to solids and liquids (J69)
+725 1.0 8.1
+15 Parkinson's disease (G20-G21)
+716 1.0 8.0
+... All other causes (residual)
+14,642 20.3 163.5
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 17
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ New Mexico
+
+... All causes
+17,685 100.0 848.2
+1 Malignant neoplasms (C00-C97)
+3,591 20.3 172.2
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+3,508 19.8 168.2
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,430 8.1 68.6
+4 Chronic lower respiratory diseases (J40-J47)
+1,109 6.3 53.2
+5 Cerebrovascular diseases (I60-I69)
+786 4.4 37.7
+6 Diabetes mellitus (E10-E14)
+608 3.4 29.2
+7 Chronic liver disease and cirrhosis (K70,K73-K74)
+566 3.2 27.1
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+500 2.8 24.0
+9 Alzheimer's disease (G30)
+483 2.7 23.2
+10 Influenza and pneumonia (J09-J18)
+322 1.8 15.4
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 316 1.8 15.2
+12 Septicemia (A40-A41)
+232 1.3 11.1
+13 Parkinson's disease (G20-G21)
+172 1.0 8.2
+14 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+157 0.9 7.5
+15 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+154 0.9 7.4
+... All other causes (residual)
+3,751 21.2 179.9
+
+ New York
+
+... All causes
+153,628 100.0 776.1
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+44,450 28.9 224.5
+2 Malignant neoplasms (C00-C97)
+35,089 22.8 177.3
+3 Chronic lower respiratory diseases (J40-J47)
+7,109 4.6 35.9
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+6,515 4.2 32.9
+5 Cerebrovascular diseases (I60-I69)
+6,292 4.1 31.8
+6 Influenza and pneumonia (J09-J18)
+4,881 3.2 24.7
+7 Diabetes mellitus (E10-E14)
+4,045 2.6 20.4
+8 Alzheimer's disease (G30)
+3,174 2.1 16.0
+9 Septicemia (A40-A41)
+2,601 1.7 13.1
+10 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+2,287 1.5 11.6
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 2,245 1.5 11.3
+12 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,652 1.1 8.3
+13 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,571 1.0 7.9
+14 Parkinson's disease (G20-G21)
+1,247 0.8 6.3
+15 Pneumonitis due to solids and liquids (J69)
+1,075 0.7 5.4
+... All other causes (residual)
+29,395 19.1 148.5
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 18
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ North Carolina
+
+... All causes
+89,133 100.0 887.5
+1 Malignant neoplasms (C00-C97)
+19,322 21.7 192.4
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+18,474 20.7 184.0
+3 Chronic lower respiratory diseases (J40-J47)
+5,221 5.9 52.0
+4 Cerebrovascular diseases (I60-I69)
+5,033 5.6 50.1
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+4,991 5.6 49.7
+6 Alzheimer's disease (G30)
+3,803 4.3 37.9
+7 Diabetes mellitus (E10-E14)
+2,746 3.1 27.3
+8 Influenza and pneumonia (J09-J18)
+2,115 2.4 21.1
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,821 2.0 18.1
+10 Septicemia (A40-A41)
+1,557 1.7 15.5
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,406 1.6 14.0
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,254 1.4 12.5
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+944 1.1 9.4
+14 Parkinson's disease (G20-G21)
+897 1.0 8.9
+15 Pneumonitis due to solids and liquids (J69)
+723 0.8 7.2
+... All other causes (residual)
+18,826 21.1 187.5
+
+ North Dakota
+
+... All causes
+6,223 100.0 822.1
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+1,323 21.3 174.8
+2 Malignant neoplasms (C00-C97)
+1,320 21.2 174.4
+3 Alzheimer's disease (G30)
+376 6.0 49.7
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+368 5.9 48.6
+5 Chronic lower respiratory diseases (J40-J47)
+351 5.6 46.4
+6 Cerebrovascular diseases (I60-I69)
+308 4.9 40.7
+7 Diabetes mellitus (E10-E14)
+195 3.1 25.8
+8 Influenza and pneumonia (J09-J18)
+172 2.8 22.7
+9 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+124 2.0 16.4
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 118 1.9 15.6
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+86 1.4 11.4
+12 Septicemia (A40-A41)
+81 1.3 10.7
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+79 1.3 10.4
+14 Pneumonitis due to solids and liquids (J69)
+77 1.2 10.2
+15 Parkinson's disease (G20-G21)
+65 1.0 8.6
+... All other causes (residual)
+1,180 19.0 155.9
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 19
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Ohio
+
+... All causes
+118,188 100.0 1,017.7
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+28,069 23.7 241.7
+2 Malignant neoplasms (C00-C97)
+25,396 21.5 218.7
+3 Chronic lower respiratory diseases (J40-J47)
+7,211 6.1 62.1
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+6,756 5.7 58.2
+5 Cerebrovascular diseases (I60-I69)
+5,945 5.0 51.2
+6 Alzheimer's disease (G30)
+4,643 3.9 40.0
+7 Diabetes mellitus (E10-E14)
+3,645 3.1 31.4
+8 Influenza and pneumonia (J09-J18)
+2,445 2.1 21.1
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 2,100 1.8 18.1
+10 Septicemia (A40-A41)
+1,957 1.7 16.9
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,650 1.4 14.2
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,506 1.3 13.0
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+1,395 1.2 12.0
+14 Parkinson's disease (G20-G21)
+1,139 1.0 9.8
+15 Pneumonitis due to solids and liquids (J69)
+876 0.7 7.5
+... All other causes (residual)
+23,455 19.8 202.0
+
+ Oklahoma
+
+... All causes
+39,422 100.0 1,007.9
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+10,310 26.2 263.6
+2 Malignant neoplasms (C00-C97)
+8,280 21.0 211.7
+3 Chronic lower respiratory diseases (J40-J47)
+2,924 7.4 74.8
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,422 6.1 61.9
+5 Cerebrovascular diseases (I60-I69)
+1,881 4.8 48.1
+6 Alzheimer's disease (G30)
+1,498 3.8 38.3
+7 Diabetes mellitus (E10-E14)
+1,442 3.7 36.9
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+790 2.0 20.2
+9 Influenza and pneumonia (J09-J18)
+717 1.8 18.3
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 616 1.6 15.7
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+597 1.5 15.3
+12 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+502 1.3 12.8
+13 Septicemia (A40-A41)
+419 1.1 10.7
+14 Parkinson's disease (G20-G21)
+334 0.8 8.5
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+324 0.8 8.3
+... All other causes (residual)
+6,366 16.1 162.8
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 20
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Oregon
+
+... All causes
+35,705 100.0 886.2
+1 Malignant neoplasms (C00-C97)
+8,093 22.7 200.9
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+6,859 19.2 170.2
+3 Chronic lower respiratory diseases (J40-J47)
+2,119 5.9 52.6
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,999 5.6 49.6
+5 Cerebrovascular diseases (I60-I69)
+1,873 5.2 46.5
+6 Alzheimer's disease (G30)
+1,652 4.6 41.0
+7 Diabetes mellitus (E10-E14)
+1,148 3.2 28.5
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+762 2.1 18.9
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+667 1.9 16.6
+10 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+565 1.6 14.0
+11 Influenza and pneumonia (J09-J18)
+453 1.3 11.2
+12 Parkinson's disease (G20-G21)
+429 1.2 10.6
+13 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 409 1.1 10.2
+14 Septicemia (A40-A41)
+227 0.6 5.6
+15 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+... All other causes (residual)
+
+222 0.6 5.5
+8,228 23.0 204.2
+
+ Pennsylvania
+
+... All causes
+132,598 100.0 1,035.7
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+32,042 24.2 250.3
+2 Malignant neoplasms (C00-C97)
+28,697 21.6 224.2
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+7,324 5.5 57.2
+4 Cerebrovascular diseases (I60-I69)
+6,987 5.3 54.6
+5 Chronic lower respiratory diseases (J40-J47)
+6,664 5.0 52.1
+6 Alzheimer's disease (G30)
+4,012 3.0 31.3
+7 Diabetes mellitus (E10-E14)
+3,777 2.8 29.5
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 3,021 2.3 23.6
+9 Influenza and pneumonia (J09-J18)
+2,899 2.2 22.6
+10 Septicemia (A40-A41)
+2,343 1.8 18.3
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,894 1.4 14.8
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,438 1.1 11.2
+13 Parkinson's disease (G20-G21)
+1,348 1.0 10.5
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+1,108 0.8 8.7
+15 Pneumonitis due to solids and liquids (J69)
+1,087 0.8 8.5
+... All other causes (residual)
+27,957 21.1 218.4
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 21
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Rhode Island
+
+... All causes
+10,163 100.0 962.1
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+2,371 23.3 224.5
+2 Malignant neoplasms (C00-C97)
+2,226 21.9 210.7
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+649 6.4 61.4
+4 Chronic lower respiratory diseases (J40-J47)
+510 5.0 48.3
+5 Alzheimer's disease (G30)
+453 4.5 42.9
+6 Cerebrovascular diseases (I60-I69)
+394 3.9 37.3
+7 Diabetes mellitus (E10-E14)
+276 2.7 26.1
+8 Influenza and pneumonia (J09-J18)
+246 2.4 23.3
+9 Septicemia (A40-A41)
+143 1.4 13.5
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 142 1.4 13.4
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+139 1.4 13.2
+12 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+127 1.2 12.0
+13 Parkinson's disease (G20-G21)
+117 1.2 11.1
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+108 1.1 10.2
+15 Pneumonitis due to solids and liquids (J69)
+88 0.9 8.3
+... All other causes (residual)
+2,174 21.4 205.8
+
+ South Carolina
+
+... All causes
+47,198 100.0 964.0
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+10,092 21.4 206.1
+2 Malignant neoplasms (C00-C97)
+9,950 21.1 203.2
+3 Chronic lower respiratory diseases (J40-J47)
+2,908 6.2 59.4
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+2,737 5.8 55.9
+5 Cerebrovascular diseases (I60-I69)
+2,600 5.5 53.1
+6 Alzheimer's disease (G30)
+2,453 5.2 50.1
+7 Diabetes mellitus (E10-E14)
+1,347 2.9 27.5
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 886 1.9 18.1
+9 Septicemia (A40-A41)
+854 1.8 17.4
+10 Influenza and pneumonia (J09-J18)
+848 1.8 17.3
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+742 1.6 15.2
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+716 1.5 14.6
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+482 1.0 9.8
+14 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+448 0.9 9.2
+15 Parkinson's disease (G20-G21)
+420 0.9 8.6
+... All other causes (residual)
+9,715 20.6 198.4
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 22
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ South Dakota
+
+... All causes
+7,731 100.0 900.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+1,711 22.1 199.3
+2 Malignant neoplasms (C00-C97)
+1,640 21.2 191.0
+3 Chronic lower respiratory diseases (J40-J47)
+502 6.5 58.5
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+469 6.1 54.6
+5 Alzheimer's disease (G30)
+421 5.4 49.0
+6 Cerebrovascular diseases (I60-I69)
+383 5.0 44.6
+7 Diabetes mellitus (E10-E14)
+282 3.6 32.8
+8 Influenza and pneumonia (J09-J18)
+213 2.8 24.8
+9 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+173 2.2 20.2
+10 Chronic liver disease and cirrhosis (K70,K73-K74)
+139 1.8 16.2
+11 Septicemia (A40-A41)
+120 1.6 14.0
+12 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+104 1.3 12.1
+13 Parkinson's disease (G20-G21)
+80 1.0 9.3
+14 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 79 1.0 9.2
+15 Pneumonitis due to solids and liquids (J69)
+58 0.8 6.8
+... All other causes (residual)
+1,357 17.6 158.1
+
+ Tennessee
+
+... All causes
+66,570 100.0 1,008.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+15,730 23.6 238.3
+2 Malignant neoplasms (C00-C97)
+14,214 21.4 215.4
+3 Chronic lower respiratory diseases (J40-J47)
+4,239 6.4 64.2
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,873 5.8 58.7
+5 Cerebrovascular diseases (I60-I69)
+3,447 5.2 52.2
+6 Alzheimer's disease (G30)
+3,122 4.7 47.3
+7 Diabetes mellitus (E10-E14)
+1,798 2.7 27.2
+8 Influenza and pneumonia (J09-J18)
+1,723 2.6 26.1
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,090 1.6 16.5
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,068 1.6 16.2
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+957 1.4 14.5
+12 Septicemia (A40-A41)
+924 1.4 14.0
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+649 1.0 9.8
+14 Parkinson's disease (G20-G21)
+604 0.9 9.2
+15 Pneumonitis due to solids and liquids (J69)
+556 0.8 8.4
+... All other causes (residual)
+12,576 18.9 190.5
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 23
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Texas
+
+... All causes
+189,654 100.0 690.4
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+43,298 22.8 157.6
+2 Malignant neoplasms (C00-C97)
+39,121 20.6 142.4
+3 Cerebrovascular diseases (I60-I69)
+10,485 5.5 38.2
+4 Chronic lower respiratory diseases (J40-J47)
+10,231 5.4 37.2
+5 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+9,976 5.3 36.3
+6 Alzheimer's disease (G30)
+8,903 4.7 32.4
+7 Diabetes mellitus (E10-E14)
+5,521 2.9 20.1
+8 Septicemia (A40-A41)
+4,381 2.3 15.9
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 4,052 2.1 14.8
+10 Chronic liver disease and cirrhosis (K70,K73-K74)
+3,844 2.0 14.0
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+3,403 1.8 12.4
+12 Influenza and pneumonia (J09-J18)
+3,214 1.7 11.7
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+2,089 1.1 7.6
+14 Parkinson's disease (G20-G21)
+1,983 1.0 7.2
+15 Assault (homicide) (*U01-*U02,X85-Y09,Y87.1)
+1,538 0.8 5.6
+... All other causes (residual)
+37,615 19.8 136.9
+
+ Utah
+
+... All causes
+17,334 100.0 578.6
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+3,598 20.8 120.1
+2 Malignant neoplasms (C00-C97)
+3,091 17.8 103.2
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,223 7.1 40.8
+4 Alzheimer's disease (G30)
+906 5.2 30.2
+5 Cerebrovascular diseases (I60-I69)
+888 5.1 29.6
+6 Chronic lower respiratory diseases (J40-J47)
+811 4.7 27.1
+7 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+630 3.6 21.0
+8 Diabetes mellitus (E10-E14)
+604 3.5 20.2
+9 Influenza and pneumonia (J09-J18)
+372 2.1 12.4
+10 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 363 2.1 12.1
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+244 1.4 8.1
+12 Parkinson's disease (G20-G21)
+229 1.3 7.6
+13 Septicemia (A40-A41)
+166 1.0 5.5
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+136 0.8 4.5
+15 Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99) 112 0.6 3.7
+... All other causes (residual)
+3,961 22.9 132.2
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 24
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Vermont
+
+... All causes
+5,919 100.0 945.5
+1 Malignant neoplasms (C00-C97)
+1,399 23.6 223.5
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+1,311 22.1 209.4
+3 Chronic lower respiratory diseases (J40-J47)
+357 6.0 57.0
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+346 5.8 55.3
+5 Cerebrovascular diseases (I60-I69)
+307 5.2 49.0
+6 Alzheimer's disease (G30)
+298 5.0 47.6
+7 Diabetes mellitus (E10-E14)
+159 2.7 25.4
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+103 1.7 16.5
+9 Influenza and pneumonia (J09-J18)
+85 1.4 13.6
+10 Parkinson's disease (G20-G21)
+83 1.4 13.3
+11 Chronic liver disease and cirrhosis (K70,K73-K74)
+71 1.2 11.3
+12 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+57 1.0 9.1
+13 Septicemia (A40-A41)
+50 0.8 8.0
+14 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 39 0.7 6.2
+15 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+... All other causes (residual)
+
+27 0.5 4.3
+1,227 20.7 196.0
+
+ Virginia
+
+... All causes
+65,577 100.0 782.3
+1 Malignant neoplasms (C00-C97)
+14,947 22.8 178.3
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+14,077 21.5 167.9
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,429 5.2 40.9
+4 Cerebrovascular diseases (I60-I69)
+3,393 5.2 40.5
+5 Chronic lower respiratory diseases (J40-J47)
+3,370 5.1 40.2
+6 Alzheimer's disease (G30)
+2,248 3.4 26.8
+7 Diabetes mellitus (E10-E14)
+2,044 3.1 24.4
+8 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 1,470 2.2 17.5
+9 Influenza and pneumonia (J09-J18)
+1,416 2.2 16.9
+10 Septicemia (A40-A41)
+1,187 1.8 14.2
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,118 1.7 13.3
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+943 1.4 11.2
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+684 1.0 8.2
+14 Parkinson's disease (G20-G21)
+638 1.0 7.6
+15 Pneumonitis due to solids and liquids (J69)
+590 0.9 7.0
+... All other causes (residual)
+14,023 21.4 167.3
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 25
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Washington
+
+... All causes
+54,595 100.0 761.4
+1 Malignant neoplasms (C00-C97)
+12,687 23.2 176.9
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+11,025 20.2 153.8
+3 Alzheimer's disease (G30)
+3,490 6.4 48.7
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,192 5.8 44.5
+5 Chronic lower respiratory diseases (J40-J47)
+3,154 5.8 44.0
+6 Cerebrovascular diseases (I60-I69)
+2,703 5.0 37.7
+7 Diabetes mellitus (E10-E14)
+1,811 3.3 25.3
+8 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+1,137 2.1 15.9
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+1,024 1.9 14.3
+10 Influenza and pneumonia (J09-J18)
+851 1.6 11.9
+11 Parkinson's disease (G20-G21)
+654 1.2 9.1
+12 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+594 1.1 8.3
+13 Pneumonitis due to solids and liquids (J69)
+590 1.1 8.2
+14 Septicemia (A40-A41)
+501 0.9 7.0
+15 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 474 0.9 6.6
+... All other causes (residual)
+10,708 19.6 149.3
+
+ West Virginia
+
+... All causes
+22,752 100.0 1,233.8
+1 Malignant neoplasms (C00-C97)
+4,839 21.3 262.4
+2 Diseases of heart (I00-I09,I11,I13,I20-I51)
+4,727 20.8 256.3
+3 Chronic lower respiratory diseases (J40-J47)
+1,628 7.2 88.3
+4 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+1,516 6.7 82.2
+5 Cerebrovascular diseases (I60-I69)
+1,079 4.7 58.5
+6 Diabetes mellitus (E10-E14)
+784 3.4 42.5
+7 Alzheimer's disease (G30)
+738 3.2 40.0
+8 Influenza and pneumonia (J09-J18)
+526 2.3 28.5
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 510 2.2 27.7
+10 Septicemia (A40-A41)
+348 1.5 18.9
+11 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+340 1.5 18.4
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+338 1.5 18.3
+13 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+297 1.3 16.1
+14 Parkinson's disease (G20-G21)
+163 0.7 8.8
+15 Pneumonitis due to solids and liquids (J69)
+159 0.7 8.6
+... All other causes (residual)
+4,760 20.9 258.1
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+9/29/2017
+
+Page 26
+
+LCWK9. Deaths, percent of total deaths, and death rates for the 15 leading causes of death: United States and each State, 2015
+
+[Rates per 100,000 population]
+
+Rank1
+
+Tenth Revision ) and State
+
+Number
+
+Cause of death (based on the International Classification of Diseases, 
+
+Percent 
+of total 
+deaths Rate
+
+ Wisconsin
+
+... All causes
+51,264 100.0 888.3
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+11,473 22.4 198.8
+2 Malignant neoplasms (C00-C97)
+11,423 22.3 197.9
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+3,206 6.3 55.6
+4 Chronic lower respiratory diseases (J40-J47)
+2,846 5.6 49.3
+5 Cerebrovascular diseases (I60-I69)
+2,618 5.1 45.4
+6 Alzheimer's disease (G30)
+2,087 4.1 36.2
+7 Diabetes mellitus (E10-E14)
+1,382 2.7 23.9
+8 Influenza and pneumonia (J09-J18)
+1,052 2.1 18.2
+9 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 996 1.9 17.3
+10 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+877 1.7 15.2
+11 Parkinson's disease (G20-G21)
+600 1.2 10.4
+12 Chronic liver disease and cirrhosis (K70,K73-K74)
+591 1.2 10.2
+13 Septicemia (A40-A41)
+517 1.0 9.0
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+485 0.9 8.4
+15 Pneumonitis due to solids and liquids (J69)
+407 0.8 7.1
+... All other causes (residual)
+10,704 20.9 185.5
+
+ Wyoming
+
+... All causes
+4,778 100.0 815.2
+1 Diseases of heart (I00-I09,I11,I13,I20-I51)
+1,030 21.6 175.7
+2 Malignant neoplasms (C00-C97)
+931 19.5 158.8
+3 Accidents (unintentional injuries) (V01-X59,Y85-Y86)
+400 8.4 68.2
+4 Chronic lower respiratory diseases (J40-J47)
+368 7.7 62.8
+5 Cerebrovascular diseases (I60-I69)
+198 4.1 33.8
+6 Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)
+157 3.3 26.8
+7 Alzheimer's disease (G30)
+151 3.2 25.8
+8 Diabetes mellitus (E10-E14)
+136 2.8 23.2
+9 Chronic liver disease and cirrhosis (K70,K73-K74)
+118 2.5 20.1
+10 Influenza and pneumonia (J09-J18)
+99 2.1 16.9
+11 Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27) 86 1.8 14.7
+12 Septicemia (A40-A41)
+46 1.0 7.8
+13 Parkinson's disease (G20-G21)
+42 0.9 7.2
+14 Essential hypertension and hypertensive renal disease (I10,I12,I15)
+41 0.9 7.0
+15 In situ neoplasms, benign neoplasms and neoplasms of uncertain or unknown 
+
+behavior (D00-D48)
+
+... All other causes (residual)
+
+34 0.7 5.8
+941 19.7 160.6
+
+... Category not applicable
+1 Rank based on number of deaths
+SOURCE: CDC/NCHS, National Vital Statistics System, Mortality 2015.
+
+

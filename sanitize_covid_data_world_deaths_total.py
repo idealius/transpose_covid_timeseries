@@ -9,8 +9,12 @@ try:
 except:
     filename = "time_series_covid19_deaths_global"
 
-CONVERT_TO_RATE = True #versus totals
+CONVERT_TO_RATE = False #versus rates
 ONE_WAVE_HERD = True #this is per capita calculation related
+if CONVERT_TO_RATE == True:
+    suffix = "_rate"
+else:
+    suffix = "_total"
 population_filename = "population_and_lockdown_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
 sweden_population = int(0)
@@ -27,6 +31,11 @@ def getstuff(filename, criterion):
 ##                print('^'+row[0])
                 yield row[0]
         return
+
+def writeblock(filename, data, suffix, extension):
+    csvfile_w = open(filename+suffix + extension, "w")
+    csvfile_w.writelines(data)
+    csvfile_w.close()
 
 def writestuff(file, data):
     datawriter = csv.writer(file)
@@ -439,10 +448,10 @@ def add_contact_tracing(_row_array, delimiter):
 add_contact_tracing(row_array, ',')
 
 
-csvfile_w = open(filename+'_t.csv', "w")
-csvfile_w.writelines(row_array)
-csvfile_w.close()
+writeblock(filename, row_array, suffix, '.csv')
 
-print('\n' + "Done, filename has _t suffix.")
+print('\n' + "Done, filename has " + suffix + " suffix.")
+
+
 
 
