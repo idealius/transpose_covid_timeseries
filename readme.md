@@ -87,7 +87,9 @@ A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrar
 
 ### Fixed Bugs
 9/30/2020: Fixed major bug from last update where the rates were not executed by new_day_rate / new_day_both nor the respective python scripts
+
 9/14/2020: Fixed major bug where the all leading causes of death value was replacing the leading cause of death
+
 9/11/2020:
 - Per capita for confirmed cases in US doesn't have population column so it shows -1, probably causes some slight date data corruption as well
 - Congo Brazzaville sanitized to "Congo", Congo Kinshasa sanitized to "Democratic Republic of Congo" to be consistent with contact tracing csv
