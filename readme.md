@@ -83,9 +83,10 @@ Q. Why does it say "Sweden's last value x of y?"
 A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
 
 ### Major Bugs
-9/14/2020: None known
+9/30/2020: None known
 
 ### Fixed Bugs
+9/30/2020: Fixed major bug from last update where the rates were not executed by new_day_rate / new_day_both nor the respective python scripts
 9/14/2020: Fixed major bug where the all leading causes of death value was replacing the leading cause of death
 9/11/2020:
 - Per capita for confirmed cases in US doesn't have population column so it shows -1, probably causes some slight date data corruption as well

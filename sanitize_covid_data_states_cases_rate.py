@@ -118,7 +118,7 @@ def load_population_table(_population_filename):
         csvfile = open(_population_filename, newline='')
         reader = csv.DictReader(csvfile)
     except:
-        print("Please run sanitize_covid_state_deaths.py first to generate populations...")
+        print("Please run sanitize_covid_state_deaths_total.py first to generate populations...")
         exit(-1)
     count = 0
     index = 0
@@ -135,7 +135,7 @@ def load_population_table(_population_filename):
         count += 1
 
 print("Extracting populations from state deaths output...")
-load_population_table("time_series_covid19_deaths_US_t.csv")
+load_population_table("time_series_covid19_deaths_US_rate.csv")
 
 
 row_array=[]

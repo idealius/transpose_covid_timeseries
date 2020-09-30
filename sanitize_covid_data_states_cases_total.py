@@ -135,7 +135,7 @@ def load_population_table(_population_filename):
         count += 1
 
 print("Extracting populations from state deaths output...")
-load_population_table("time_series_covid19_deaths_US_t.csv")
+load_population_table("time_series_covid19_deaths_US_rate.csv")
 
 
 row_array=[]
