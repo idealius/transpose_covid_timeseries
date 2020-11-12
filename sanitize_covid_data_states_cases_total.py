@@ -20,7 +20,7 @@ try:
 except:
     filename = "time_series_covid19_confirmed_US"
 
-CONVERT_TO_RATE = False #Versus totals
+CONVERT_TO_RATE = False #Versus rates
 ONE_WAVE_HERD = True
 if CONVERT_TO_RATE == True:
     suffix = "_rate"
@@ -118,7 +118,7 @@ def load_population_table(_population_filename):
         csvfile = open(_population_filename, newline='')
         reader = csv.DictReader(csvfile)
     except:
-        print("Please run sanitize_covid_state_deaths_total.py first to generate populations...")
+        print("Please run sanitize_covid_state_deaths.py first to generate populations...")
         exit(-1)
     count = 0
     index = 0
@@ -146,7 +146,7 @@ throwaway = ["Diamond Princess", "MS Zaandam"]
 count = 0
 sub_count = 0
 days = 0
-already_printed = False
+
 #Retreive Rows and Consolidate Countries / Sanitize their names
 for row in getstuff(filename, throwaway):
 
@@ -162,7 +162,6 @@ for row in getstuff(filename, throwaway):
     sub_count = 0
 
 
-
     addition = False
        
     for value in parsestuff(row, ','):
@@ -176,8 +175,8 @@ for row in getstuff(filename, throwaway):
             
         sub_count += 1 #sub_count starts at 1
 
-  
-        if sub_count == 1: #Lets compare county name to the previous rows county
+        
+        if sub_count == 1: #Lets compare country name to the previous rows country
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
             if value == '':  # No state??
                 addition = False
@@ -186,14 +185,11 @@ for row in getstuff(filename, throwaway):
 ##            print('!'+parse_str)
             if parse_str == value:
                 addition = True
-                if already_printed == False:
-                    print(parse_str + ':' + "Adding County...")
-                    already_printed = True
-            else: #If not the same county just add the row to our array
-                already_printed = False
+                print(parse_str + ':' + "Adding County...")               
+            else: #If not the same country just add the row to our array
                 row_array.append(row)
-                break
-        elif sub_count > 7: #We're still here so it must be a duplicate county
+                break;
+        elif sub_count > 7: #We're still here so it must be a duplicate country
 ##                print("Adding...")
             return_value = parseop(row_array[count-1], ',', sub_count, _value, parse.ADD)
             if return_value == -1:
@@ -203,7 +199,6 @@ for row in getstuff(filename, throwaway):
 
     if addition != True: # Looks good, lets move to the next row...
         count +=1
-
 
 
 

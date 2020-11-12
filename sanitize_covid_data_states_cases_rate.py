@@ -77,7 +77,7 @@ class parse(Enum):
 
 
 def parseop(string, delimiter, index, value, operation): #parse operation, index starts at 1
-    _string = string+delimiter#Add a trailing comma at end of complete line so _string.find 's are easier
+    _string = string+delimiter#Add a trailing comma at end of complete line to account for the last block
     count = 1
     start = 0
     while count < index:
@@ -146,7 +146,7 @@ throwaway = ["Diamond Princess", "MS Zaandam"]
 count = 0
 sub_count = 0
 days = 0
-already_printed = False
+
 #Retreive Rows and Consolidate Countries / Sanitize their names
 for row in getstuff(filename, throwaway):
 
@@ -162,7 +162,6 @@ for row in getstuff(filename, throwaway):
     sub_count = 0
 
 
-
     addition = False
        
     for value in parsestuff(row, ','):
@@ -176,8 +175,8 @@ for row in getstuff(filename, throwaway):
             
         sub_count += 1 #sub_count starts at 1
 
-  
-        if sub_count == 1: #Lets compare county name to the previous rows county
+        
+        if sub_count == 1: #Lets compare country name to the previous rows country
             parse_str = row_array[count-1][:row_array[count-1].find(',')]
             if value == '':  # No state??
                 addition = False
@@ -186,14 +185,11 @@ for row in getstuff(filename, throwaway):
 ##            print('!'+parse_str)
             if parse_str == value:
                 addition = True
-                if already_printed == False:
-                    print(parse_str + ':' + "Adding County...")
-                    already_printed = True
-            else: #If not the same county just add the row to our array
-                already_printed = False
+                print(parse_str + ':' + "Adding County...")               
+            else: #If not the same country just add the row to our array
                 row_array.append(row)
-                break
-        elif sub_count > 7: #We're still here so it must be a duplicate county
+                break;
+        elif sub_count > 7: #We're still here so it must be a duplicate country
 ##                print("Adding...")
             return_value = parseop(row_array[count-1], ',', sub_count, _value, parse.ADD)
             if return_value == -1:

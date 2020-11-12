@@ -27,8 +27,6 @@ Then, sanitizes and transposes it so it is workable in common visualization soft
 
 `pip3 install pdfminer3`
 
-*Note: for JSON and JS rate outputs also `pip3 install pandas`
-
 3. Right-click `downloadcovid.ps1` then click Run with Powershell
 - OR Install wget, add to PATH, then run `downloadcovid.bat`
 
@@ -84,14 +82,10 @@ Q. Why does it say "Sweden's last value x of y?"
 
 A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
 
-### Major Bugs / New Major Features
-11/11/2020: Added .py and .bat files for json and js data outputs for rates data global / US and appended to new_day_both.bat
-
+### Major Bugs
 9/30/2020: None known
 
-### Fixed Bugs / New Features
-11/11/2020: Changed states python scripts behavior to only print one "Adding County..." for each state in attempt to speed up state scripts and make less verbose.
-
+### Fixed Bugs
 9/30/2020: Fixed major bug from last update where the rates were not executed by new_day_rate / new_day_both nor the respective python scripts
 
 9/14/2020: Fixed major bug where the all leading causes of death value was replacing the leading cause of death
