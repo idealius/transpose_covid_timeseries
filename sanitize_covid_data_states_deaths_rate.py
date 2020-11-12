@@ -126,7 +126,7 @@ for row in getstuff(filename, throwaway):
         count += 1
         continue
 
-    if sub_count-7 > days: days = sub_count-7 #subtract next 7 columns
+    if sub_count-8 > days: days = sub_count-8 #subtract next 7 columns
     sub_count = 0
 
 
@@ -369,6 +369,7 @@ def transpose(_proc_row_array, _days):
     for c in range(1, states+1):
         for index in range(1, _days+1):
     ##        if c * days + index + 1 >= len(_row_array): break;
+            print(row_array[(c - 1) * (_days)+index])
             try:
                 _row_array[(c - 1) * (_days)+index] = compose_row(_proc_row_array[c], _proc_row_array[0], index, ',') + '\r'
             except:
@@ -378,6 +379,8 @@ def transpose(_proc_row_array, _days):
     ##        print(_row_array[c * days+index])
     print(str((c-1)*_days+index), str(len(_row_array)))
     return _row_array
+
+print(days)
 
 row_array = transpose(row_array, days)
 ##print(row_array)
