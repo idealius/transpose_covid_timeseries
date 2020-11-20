@@ -4,6 +4,7 @@ from enum import Enum
 from datetime import *
 from io import StringIO
 import pandas as pd
+import json
 
 # Creates JSON and JS files from CSV
 
@@ -26,11 +27,16 @@ def csv_debug(filename):
 
 # csv_debug(filename)
 df = pd.read_csv (filename + '.csv', engine='python')
-# print(df)
+with pd.option_context('display.precision', 15):
+    print(df)
 filename = filename.replace("time_series_", "")
 # df = 'var' + filename + ' = '+ df
-df.to_json (filename + '.json', orient="records")
+# df.to_json (filename + '.json', orient="records", double_precision=30)
 
+# json.dumps(df.to_dict())
+f = open(filename + '.json','w')
+json.dump(df.to_dict(orient="records"), f)  # f is an open fileobj
+f.close()
 f = open(filename + '.json','r')
 newf = open(filename + '.js','w')
 lines = f.readlines() # read old content
