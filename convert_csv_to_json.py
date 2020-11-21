@@ -35,7 +35,13 @@ filename = filename.replace("time_series_", "")
 
 # json.dumps(df.to_dict())
 f = open(filename + '.json','w')
-json.dump(df.to_dict(orient="records"), f)  # f is an open fileobj
+records = df.to_dict(orient="records")
+for i in range(0,len(records)):
+    # Remove these keys:
+    records[i] = {k: records[i][k] for k in records[i].keys() - {'Reported Deaths', 'Reported Cases', 'Population', 'Lat', 'Long_', 'Long', 'Lockdown', 'Contact Tracing' }}
+    # print(records[i])
+json.dump(records, f)  # f is an open fileobj
+
 f.close()
 f = open(filename + '.json','r')
 newf = open(filename + '.js','w')

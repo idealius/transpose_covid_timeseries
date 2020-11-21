@@ -166,7 +166,7 @@ load_population_table(population_filename)
 row_array=[]
 print("Processing File..")
 
-throwaway = ["Diamond Princess", "MS Zaandam"]
+throwaway = ["Diamond Princess", "MS Zaandam", "Bonaire, Sint Eustatius and Saba"]
 
 count = 0
 sub_count = 0
