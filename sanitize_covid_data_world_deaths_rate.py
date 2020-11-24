@@ -98,7 +98,8 @@ def sanitize_countryname(string):
                     "Congo (Kinshasa)",
                     "Bonaire, Sint Eustatius and Saba", #This one has problems because of the comma
                     "Czechia",
-                    "Taiwan*"
+                    "Taiwan*",
+                    "Georgia"
                     
 ]
     
@@ -110,7 +111,8 @@ def sanitize_countryname(string):
                              "Democratic Republic of Congo",
                              "Bonaire",
                              "Czech Republic",
-                             "Taiwan"
+                             "Taiwan",
+                             "Georgia (Country)"
                              
 ]
     
