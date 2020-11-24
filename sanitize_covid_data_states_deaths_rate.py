@@ -114,7 +114,7 @@ throwaway = ["Diamond Princess", "MS Zaandam"]
 count = 0
 sub_count = 0
 days = 0
-already_printed = False
+
 #Retreive Rows and Consolidate Countries / Sanitize their names
 for row in getstuff(filename, throwaway):
 
@@ -126,9 +126,7 @@ for row in getstuff(filename, throwaway):
         count += 1
         continue
 
-
-    if sub_count-8 > days: days = sub_count-8 #subtract next 7 columns
-
+    if sub_count-8 > days: days = sub_count-8 #subtract first thirteen columns
     sub_count = 0
 
 
@@ -151,13 +149,11 @@ for row in getstuff(filename, throwaway):
             if value == '':
                 sub_count -=2
                 break # No state??
-            if already_printed == False:
-                if parse_str == value:
-                    addition = True
-                    print(parse_str + ':' + "Adding County...")
-                    already_printed = True
+
+            if parse_str == value:
+                addition = True
+                print(parse_str + ':' + "Adding County...")               
             else: #If not the same country just add the row to our array
-                already_printed = False #reset
                 row_array.append(row)
                 break;
         elif sub_count > 7: #We're still here so it must be a duplicate country
@@ -368,7 +364,6 @@ def transpose(_proc_row_array, _days):
     for c in range(1, states+1):
         for index in range(1, _days+1):
     ##        if c * days + index + 1 >= len(_row_array): break;
-            print(row_array[(c - 1) * (_days)+index])
             try:
                 _row_array[(c - 1) * (_days)+index] = compose_row(_proc_row_array[c], _proc_row_array[0], index, ',') + '\r'
             except:
@@ -378,8 +373,6 @@ def transpose(_proc_row_array, _days):
     ##        print(_row_array[c * days+index])
     print(str((c-1)*_days+index), str(len(_row_array)))
     return _row_array
-
-print(days)
 
 row_array = transpose(row_array, days)
 ##print(row_array)

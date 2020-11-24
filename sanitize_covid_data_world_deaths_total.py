@@ -98,7 +98,8 @@ def sanitize_countryname(string):
                     "Congo (Kinshasa)",
                     "Bonaire, Sint Eustatius and Saba", #This one has problems because of the comma
                     "Czechia",
-                    "Taiwan*"
+                    "Taiwan*",
+                    "Georgia"
                     
 ]
     
@@ -110,7 +111,8 @@ def sanitize_countryname(string):
                              "Democratic Republic of Congo",
                              "Bonaire",
                              "Czech Republic",
-                             "Taiwan"
+                             "Taiwan",
+                             "Georgia (Country)"
                              
 ]
     
@@ -162,7 +164,7 @@ load_population_table(population_filename)
 row_array=[]
 print("Processing File..")
 
-throwaway = ["Diamond Princess", "MS Zaandam"]
+throwaway = ["Diamond Princess", "MS Zaandam", "Bonaire, Sint Eustatius and Saba"]
 
 count = 0
 sub_count = 0
