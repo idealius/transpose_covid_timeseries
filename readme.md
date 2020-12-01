@@ -3,6 +3,8 @@
 Downloads time series data for deaths and confirmed cases from Johns Hopkins COVID-19's github. 
 Then, sanitizes and transposes it so it is workable in common visualization software (Excel, Tableau, QGIS, etc.) for a timelapse and writes to a file with absolute values and per capita values **in percent (multiplied by 100.)**
 
+This project's data is used by my COVID dashboard project: https://github.com/idealius/covid_sandbox
+
 ### Requirements
 
 - Windows 10 (Maybe Windows 8/7 would work)
