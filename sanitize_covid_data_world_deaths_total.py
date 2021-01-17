@@ -406,7 +406,8 @@ def add_contact_tracing(_row_array, delimiter):
             else: #Where we add the column
                 if file_day == array_day:
                     _row_array[count] = _row_array[count].replace('\r','')
-                    _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
+                    # _row_array[count] = _row_array[count] + delimiter + row['Contact tracing (OxBSG)'] + '\r' #Repeated data assignment
+                    _row_array[count] = _row_array[count] + delimiter + row['contact_tracing'] + '\r' #Repeated data assignment
                     count += 1
 ##                    print(_row_array[count])
 
