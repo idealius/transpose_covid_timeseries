@@ -85,9 +85,11 @@ Q. Why does it say "Sweden's last value x of y?"
 A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
 
 ### Major Bugs
-11/21/2020: None known
+4/21/2020: None known
 
 ### Fixed Bugs
+4/21/2020: The author of the data source added an extra row of UK data which was a total, scripts adjusted to fix this.
+Netherlands also had a problem with Bonaire et al being left out of data calculations, this is fixed.
 11/21/2020: Netherlands was added twice to global output files because of "Bonaire, Sint Eustatius and Saba", so Bonaire (and outlying islands) section was removed
 9/30/2020: Fixed major bug from last update where the rates were not executed by new_day_rate / new_day_both nor the respective python scripts
 
@@ -115,7 +117,7 @@ Add scripts for county (not count**r**y) rate conversion / transposing
 
 Add arguments for different data transformation options
 
-Add better column interpretation (quotes with or without commas)
+Add better column interpretation (quotes with or without commas) (4/21/21) This was fixed in the globabl data sources, not sure if it's necessary to add to the US data...
 
 Consolidate/refactor files with shared functions
 

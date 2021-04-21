@@ -18,17 +18,43 @@ population_filename = "population_and_lockdown_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
 sweden_population = int(0)
 
+
+def check_comma(row):
+    _str = row[row.find(',')+1:]
+    _str = _str[_str.find(',')+1:]
+    _check = _str[:_str.find(',')]
+
+    try:
+        num = float(_check)
+    except:
+        num = -1
+    
+    if (_check == ""): num = 0
+
+    if (num != -1):
+        return row
+    else:
+        return row.replace(',', '', 1)
+    
+
 def getstuff(filename, criterion):
     with open(filename+'.csv', "r", newline='') as csvfile_r:
         datareader = csv.reader(csvfile_r, delimiter='\r')
         #yield next(datareader)  # yield the header row
+        count = 0
         for row in datareader:
+
             throwaway = False
+            if (count != 0): # Unless its the header row lets fix problems with commas in region names
+                row[0] = check_comma(row[0])
+            
+            # print(row[0])
             for criteria in criterion:
                 if criteria in row[0]: throwaway = True
             if throwaway == False:
 ##                print('^'+row[0])
                 yield row[0]
+            count += 1
         return
     
 def writeblock(filename, data, suffix, extension):
@@ -95,7 +121,7 @@ def sanitize_countryname(string):
                     "Bosnia and Herzegovina",
                     "Congo (Brazzaville)",
                     "Congo (Kinshasa)",
-                    "Bonaire, Sint Eustatius and Saba", #This one has problems because of the comma
+                    #"Bonaire, Sint Eustatius and Saba", #This one has problems because of the comma
                     "Czechia",
                     "Taiwan*",
                     "Georgia"
@@ -108,7 +134,7 @@ def sanitize_countryname(string):
                              "Bosnia",
                              "Congo",
                              "Democratic Republic of Congo",
-                             "Bonaire",
+                            # "Bonaire",
                              "Czech Republic",
                              "Taiwan",
                              "Georgia (Country)"
@@ -168,7 +194,7 @@ load_population_table(population_filename)
 row_array=[]
 print("Processing File..")
 
-throwaway = ["Diamond Princess", "MS Zaandam", "Bonaire, Sint Eustatius and Saba"]
+throwaway = ["Diamond Princess", "MS Zaandam"]
 
 count = 0
 sub_count = 0
@@ -177,7 +203,13 @@ sweden_index= 0
 #Retreive Rows and Consolidate Countries / Sanitize their names
 for row in getstuff(filename, throwaway):
 
+    region=row[:row.find(',')] #Store first column because the UK is duplicated
     row=row[row.find(',')+1:] #Skip first column
+
+    #Skip duplicate UK total
+    if region == '' and parseop(row,',',1,0,parse.RETRIEVE) == 'United Kingdom':
+        print('Skip UK duplicate total')
+        continue
 
     if count == 0: #Skip first row header
         row_array.append(row)
@@ -384,7 +416,7 @@ def add_contact_tracing(_row_array, delimiter):
         file_country = row["Entity"]
         file_country = sanitize_contacttracing_countryname(file_country)
 ##        file_day = datetime.strptime(row['Date'], "%b %d, %Y")
-        file_day = datetime.strptime(row['Date'], "%Y-%m-%d")
+        file_day = datetime.strptime(row['Day'], "%Y-%m-%d")
 
         if file_country == country_not_found:
             continue
