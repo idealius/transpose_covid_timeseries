@@ -203,13 +203,13 @@ sweden_index= 0
 #Retreive Rows and Consolidate Countries / Sanitize their names
 for row in getstuff(filename, throwaway):
 
-    region=row[:row.find(',')] #Store first column because the UK is duplicated
+    # region=row[:row.find(',')] #Store first column because the UK is duplicated
     row=row[row.find(',')+1:] #Skip first column
 
     #Skip duplicate UK total
-    if region == '' and parseop(row,',',1,0,parse.RETRIEVE) == 'United Kingdom':
-        print('Skip UK duplicate total')
-        continue
+    # if region == '' and parseop(row,',',1,0,parse.RETRIEVE) == 'United Kingdom':
+    #     print('Skip UK duplicate total')
+    #     continue
 
     if count == 0: #Skip first row header
         row_array.append(row)
