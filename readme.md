@@ -85,9 +85,11 @@ Q. Why does it say "Sweden's last value x of y?"
 A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
 
 ### Major Bugs
-4/23/2021: None known
+5/10/2021: None known
 
 ### Fixed Bugs
+5/10/2021: "Korea, South" sanitized to "Korea South" in py and csv's
+
 4/23/2021: Population table.csv updated so Czechia is renamed to Czech Republic for per capita data
 
 4/21/2021: A comma in one of the UK regions caused its data to be duplicated. This was fixed by removing commas in region names

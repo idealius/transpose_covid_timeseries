@@ -18,22 +18,51 @@ population_filename = "population_and_lockdown_table.csv"
 contact_tracing_filename = "covid-contact-tracing.csv"
 sweden_population = int(0)
 
+
+#Handles these cases:
+# 5
+# rlast, rfirst, clast, cfirst, num
+# 4
+# rlast, rfirst, country, num
+# 4
+# , clast, cfirst, num
+# 3
+# region, country, num
+# 3
+# , country, num
 def check_comma(row):
-    _str = row[row.find(',')+1:]
-    _str = _str[_str.find(',')+1:]
-    _check = _str[:_str.find(',')]
+    _str = row
+    columns = 1
+    num = -1
 
-    try:
-        num = float(_check)
-    except:
-        num = -1
-    
-    if (_check == ""): num = 0
+    while num == -1:
+        _str = _str[_str.find(',')+1:]
+        _check = _str[:_str.find(',')]
 
-    if (num != -1):
-        return row
-    else:
-        return row.replace(',', '', 1)
+        try:
+            num = float(_check)
+        except:
+            num = -1
+        if (_check == ""): num = 0
+        columns += 1
+
+    if row.find(',') == 0 and columns == 4:
+        row = row.replace(',','',2)
+        row = ',' + row
+    elif columns == 4:
+        row = row.replace(',','',1)
+    elif columns == 5: 
+        clast = row[row.find(',')+1:]
+        clast = clast[clast.find(',')+1:]
+        cfirst = clast[clast.find(',')+1:]
+        marker = cfirst[cfirst.find(',')+1:]
+        clast = clast[:clast.find(',')]
+        cfirst = cfirst[:cfirst.find(',')]
+        row = ',' + cfirst + clast + marker
+        print('5 column detected')
+
+    return row
+
     
 
 def getstuff(filename, criterion):
@@ -116,7 +145,7 @@ def parseop(string, delimiter, index, value, operation): #parse operation, index
 def sanitize_countryname(string):
     culprits = ["\"", #Get rid of extra quotes
                     "\*", #Get rid of the * in Taiwan
-                    "Korea, South",
+                    # "Korea South",
                     "Bosnia and Herzegovina",
                     "Congo (Brazzaville)",
                     "Congo (Kinshasa)",
@@ -129,7 +158,7 @@ def sanitize_countryname(string):
     
     replacements = ["",
                              "",
-                             "South Korea",
+                            #  "Korea South",
                              "Bosnia",
                              "Congo",
                              "Democratic Republic of Congo",
