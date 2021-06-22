@@ -78,11 +78,7 @@ Source: (https://ourworldindata.org/grapher/covid-contact-tracing)
 
 Q. Why are certain regions printed out during runtime and not others?
 
-A. The regions are printed to the console if they have rates higher than sweden's total rate per capita. Other than that the rest is probably left over information used for debugging / confirmation. It's calculated on the fly for world data and hard-coded at .057% for state data comparison. The usefulness of this is questionable for the rate scripts (vs the totals.)
-
-Q. Why does it say "Sweden's last value x of y?"
-
-A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrarily chose it as a litmus test for other regions. You can ignore it as it doesn't affect the output data.
+A. Mostly for debugging and for comparing to Sweden much earlier on in the pandemic
 
 ### Major Bugs
 5/10/2021: None known
@@ -95,7 +91,7 @@ A. This is the last **total** of cases or deaths for Sweden. I somewhat arbitrar
 4/21/2021: A comma in one of the UK regions caused its data to be duplicated. This was fixed by removing commas in region names
 Netherlands also had a problem with Bonaire et al being left out of data calculations, this is fixed.
 
-11/21/2020: Netherlands was added twice to global output files because of "Bonaire, Sint Eustatius and Saba", so Bonaire (and outlying islands) section was removed
+11/21/2020: Netherlands was added twice to global output files because of "Bonaire, Sint Eustatius and Saba", so Bonaire (and outlying islands) section was remove (these are now properly handled 2021)
 
 9/30/2020: Fixed major bug from last update where the rates were not executed by new_day_rate / new_day_both nor the respective python scripts
 
@@ -108,16 +104,15 @@ Netherlands also had a problem with Bonaire et al being left out of data calcula
 - Fixed rare bug with extra ghost column being added during contact tracing processing
 
 ### Superficial Bugs
-Bonaire and surrounding islands interpreted incorrectly due to a comma within its label.
 
 US territories like Guam, Virgin Islands, etc. aren't accounted for correctly because they lack population table data.
 
 A full list of territories with population data that isn't cross-referenced correctly with COVID-19 data is outputted during processing and listed below in the limitations section below.
 
-Lat and Lon are taken from the first unique country / state which may be an undesirable region / county's lattitude and longitude
+Lat and Lon are taken from the first unique country, state, or county which may be an undesirable region / county's lattitude and longitude
 
 ### Potential Enhancements
-Add saving rates and totals to each case/death output file (9/19/20 I decided to just duplicate the scripts because it seemed more timely)
+Add saving rates and totals to each case/death output file (9/19/20 I decided to just duplicate the scripts because it required less coding at the time)
 
 Add scripts for county (not count**r**y) rate conversion / transposing
 
@@ -155,11 +150,6 @@ Consolidate/refactor files with shared functions
 - Turkmenistan
 - Turks and Caicos Islands
 - Vanuatu
-7. World data has following regions / sites stripped: 
-Diamond Princess
-MS Zaandam
-Bonaire, Sint Eustatius and Saba
-
 
 
 ### Sources & Notes
