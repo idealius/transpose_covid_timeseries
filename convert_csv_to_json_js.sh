@@ -1,0 +1,7 @@
+#!/bin/bash
+python3 convert_csv_to_json.py time_series_covid19_confirmed_global_rate
+python3 convert_csv_to_json.py time_series_covid19_deaths_global_rate
+python3 convert_csv_to_json.py time_series_covid19_confirmed_US_rate
+python3 convert_csv_to_json.py time_series_covid19_deaths_US_rate
+
+cp *.js ~/Projects/covid-sandbox/data/

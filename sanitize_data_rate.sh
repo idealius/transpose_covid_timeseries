@@ -1,0 +1,5 @@
+#!/bin/bash
+python3 sanitize_covid_data_world_cases_rate.py
+python3 sanitize_covid_data_world_deaths_rate.py
+python3 sanitize_covid_data_states_deaths_rate.py
+python3 sanitize_covid_data_states_cases_rate.py
