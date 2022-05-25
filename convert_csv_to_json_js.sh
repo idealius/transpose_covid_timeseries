@@ -4,4 +4,10 @@ python3 convert_csv_to_json.py time_series_covid19_deaths_global_rate
 python3 convert_csv_to_json.py time_series_covid19_confirmed_US_rate
 python3 convert_csv_to_json.py time_series_covid19_deaths_US_rate
 
-cp *.js ~/Projects/covid-sandbox/data/
+#Has problem with enum v v
+#pypy convert_csv_to_json.py time_series_covid19_confirmed_global_rate
+#pypy convert_csv_to_json.py time_series_covid19_deaths_global_rate
+#pypy convert_csv_to_json.py time_series_covid19_confirmed_US_rate
+#pypy convert_csv_to_json.py time_series_covid19_deaths_US_rate
+
+cp *.js /home/idealius/Projects/covid-sandbox/data/

@@ -1,4 +1,4 @@
-#~/bin/bash
+#!/bin/bash
 python3 sanitize_covid_data_world_cases_total.py
 python3 sanitize_covid_data_world_deaths_total.py
 python3 sanitize_covid_data_states_deaths_total.py
