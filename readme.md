@@ -1,4 +1,4 @@
-# Sanitize COVID-19 Data
+# Transpose and Sanitize COVID-19 Data
 
 Downloads time series data for deaths and confirmed cases from Johns Hopkins COVID-19's github. 
 Then, sanitizes and transposes it so it is workable in common visualization software (Excel, Tableau, QGIS, etc.) for a timelapse and writes to a file with absolute values and per capita values **in percent (multiplied by 100.)**
